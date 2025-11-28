@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "description": "Royal Fit Uniforms Image Gallery Metadata",
+  "lastUpdated": "2025-11-28",
+  "galleries": [
+    {
+      "id": "hospitality",
+      "name": "Hospitality & Banquet",
+      "description": "Professional uniforms for hotel staff and banquet services",
+      "images": [
+        {
+          "id": "banquet-vest",
+          "filename": "banquet-staff-vest.jpg.png",
+          "title": "Banquet Staff Vest",
+          "description": "Professional formal vest with golden trim for banquet service staff",
+          "alt": "Banquet server wearing navy vest with golden buttons and trim",
+          "path": "/images/banquet-staff-vest.jpg.png",
+          "category": "Formal",
+          "featured": true
+        },
+        {
+          "id": "hosp-tunic",
+          "filename": "housekeeping-tunic.jpg.png",
+          "title": "Housekeeping Tunic",
+          "description": "Comfortable and professional housekeeping uniform for hotel staff",
+          "alt": "Hotel staff member preparing white linens in housekeeping uniform",
+          "path": "/images/housekeeping-tunic.jpg.png",
+          "category": "Service",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare & Medical",
+      "description": "Functional and professional healthcare uniforms",
+      "images": [
+        {
+          "id": "health-scrubs",
+          "filename": "premium-scrub-set (1).png",
+          "title": "Premium Scrub Set",
+          "description": "Medical-grade navy scrubs for healthcare professionals",
+          "alt": "Healthcare professionals in modern navy scrubs in hospital setting",
+          "path": "/images/premium-scrub-set (1).png",
+          "category": "Medical",
+          "featured": true
+        },
+        {
+          "id": "health-lab",
+          "filename": "lab-coat-professional.jpg.png",
+          "title": "Professional Lab Coat",
+          "description": "Crisp white lab coat for medical and pharmaceutical professionals",
+          "alt": "Scientists in professional white lab coats working in laboratory",
+          "path": "/images/lab-coat-professional.jpg.png",
+          "category": "Lab",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "culinary",
+      "name": "Culinary & Chef",
+      "description": "Professional chef uniforms for executive and culinary staff",
+      "images": [
+        {
+          "id": "chef-jacket",
+          "filename": "chef-executive-jacket.jpg.png",
+          "title": "Executive Chef Jacket",
+          "description": "Premium double-breasted chef jacket with golden buttons",
+          "alt": "Executive chef in professional navy double-breasted chef jacket",
+          "path": "/images/chef-executive-jacket.jpg.png",
+          "category": "Chef",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate & Executive",
+      "description": "Business professional and executive uniforms",
+      "images": [
+        {
+          "id": "corp-blazer",
+          "filename": "corporate-blazer.jpg.png",
+          "title": "Corporate Blazer",
+          "description": "Navy blazer with gold trim for corporate professionals",
+          "alt": "Business professional in navy corporate blazer with golden trim",
+          "path": "/images/corporate-blazer.jpg.png",
+          "category": "Business",
+          "featured": true
+        },
+        {
+          "id": "office-shirt",
+          "filename": "formal-office-shirt.jpg.png",
+          "title": "Formal Office Shirt",
+          "description": "Professional formal shirt for corporate offices",
+          "alt": "Professional wearing formal office shirt in corporate environment",
+          "path": "/images/formal-office-shirt.jpg.png",
+          "category": "Business",
+          "featured": false
+        }
+      ]
+    }
+  ]
+}
