@@ -26,17 +26,17 @@ export const ASSETS = {
     // Hospitality
     // Updated to match "Banquet" context: Waitstaff serving (professional vest)
     // Local project images (replace placeholders with optimized JPG/PNG as needed)
-    HOSP_VEST: '/images/banquet-staff-vest.svg', 
-    HOSP_CHEF: '/images/chef-uniform.svg', // Chef
+    HOSP_VEST: 'public/images/banquet-staff-vest.jpg.png', 
+    HOSP_CHEF: 'public/images/chef-executive-jacket.jpg.png', // Chef
     // Updated to match "Housekeeping" context: Staff making bed (placeholder used)
-    HOSP_TUNIC: '/images/front-desk-uniform.svg', 
+    HOSP_TUNIC: 'public/images/housekeeping-tunic.jpg.png', 
 
     // Healthcare
-    HEALTH_SCRUBS: 'https://images.unsplash.com/photo-1584515933487-779824d29609?q=80&w=1024&auto=format&fit=crop', // Scrubs/Mask
-    HEALTH_LAB: 'https://images.unsplash.com/photo-1581093458891-b98838ea1eb1?q=80&w=1024&auto=format&fit=crop', // Lab Coat
+    HEALTH_SCRUBS: 'public/images/premium-scrub-set (1).png', // Scrubs/Mask
+    HEALTH_LAB: 'public/images/lab-coat-professional.jpg.png', // Lab Coat
 
     // Corporate
-    CORP_BLAZER: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1024&auto=format&fit=crop', // Man in Blazer
-    CORP_SHIRT: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1024&auto=format&fit=crop', // Woman w/ Headset (Matches user image)
+    CORP_BLAZER: 'public/images/corporate-blazer.jpg.png', // Man in Blazer
+    CORP_SHIRT: 'public/images/formal-office-shirt.jpg.png', // Woman w/ Headset (Matches user image)
   }
 };
