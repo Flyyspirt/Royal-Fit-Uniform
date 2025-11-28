@@ -25,10 +25,11 @@ export const ASSETS = {
   PRODUCTS: {
     // Hospitality
     // Updated to match "Banquet" context: Waitstaff serving (professional vest)
-    HOSP_VEST: 'https://images.unsplash.com/photo-1525204481358-8547407945d8?q=80&w=1024&auto=format&fit=crop', 
-    HOSP_CHEF: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1024&auto=format&fit=crop', // Chef
-    // Updated to match "Housekeeping" context: Staff making bed
-    HOSP_TUNIC: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1024&auto=format&fit=crop', 
+    // Local project images (replace placeholders with optimized JPG/PNG as needed)
+    HOSP_VEST: '/images/banquet-staff-vest.svg', 
+    HOSP_CHEF: '/images/chef-uniform.svg', // Chef
+    // Updated to match "Housekeeping" context: Staff making bed (placeholder used)
+    HOSP_TUNIC: '/images/front-desk-uniform.svg', 
 
     // Healthcare
     HEALTH_SCRUBS: 'https://images.unsplash.com/photo-1584515933487-779824d29609?q=80&w=1024&auto=format&fit=crop', // Scrubs/Mask

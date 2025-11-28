@@ -16,11 +16,19 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="group bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col h-full focus-within:ring-2 focus-within:ring-royal-gold">
       <div className="relative overflow-hidden h-64 bg-gray-200">
-        <img
-          src={product.imageUrl}
-          alt={product.name}
-          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-        />
+        {/** Use a descriptive alt for Banquet Staff Vest per content request */}
+        {(() => {
+          const altText = product.name === 'Banquet Staff Vest'
+            ? 'Diverse Indian team in Royal Fit banquet vest for premium service'
+            : product.name;
+          return (
+            <img
+              src={product.imageUrl}
+              alt={altText}
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+          );
+        })()}
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
         <div className="absolute bottom-0 left-0 bg-royal-gold text-royal-navy px-3 py-1 text-sm font-bold">
           {product.category}
