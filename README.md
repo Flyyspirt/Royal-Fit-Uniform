@@ -1,11 +1,63 @@
-<div align="center">
+# Royal Fit Uniform Website
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+The official B2B showcase website for Royal Fit Uniform, built with React, TypeScript, and Tailwind CSS.
 
-  <h1>Built with AI Studio</h2>
+## Overview
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+Royal Fit Uniform is a Hyderabad-based uniform consultancy transitioning from traditional manufacturing to a technology-driven "Expert Consultant" model. This website showcases their premium offerings in Hospitality, Healthcare, and Corporate sectors.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Tech Stack
 
-</div>
+- **Framework**: React 19
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Typography**: Playfair Display (Headings), Roboto (Body)
+
+## Setup Instructions
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/royalfituniform-website.git
+    cd royalfituniform-website
+    ```
+
+2.  **Dependencies**:
+    This project uses ES modules via CDN (AI Studio environment default). For a local Node.js environment, run:
+    ```bash
+    npm install react react-dom react-router-dom lucide-react
+    ```
+
+3.  **Run Locally**:
+    *   **In AI Studio/StackBlitz**: The app runs automatically.
+    *   **Local Machine**: Use Vite or Create React App to serve the `index.html`.
+
+## Deployment (Vercel)
+
+This project is optimized for deployment on Vercel.
+
+1.  Push your code to a GitHub repository.
+2.  Go to [Vercel](https://vercel.com) and sign up/log in.
+3.  Click **"Add New Project"** and select your `royalfituniform-website` repo.
+4.  Vercel will detect the framework settings. Click **Deploy**.
+5.  Once deployed, go to **Settings > Domains** to add `royalfituniform.com`.
+
+## Project Structure
+
+- `index.html`: Entry point.
+- `index.tsx`: React root rendering.
+- `App.tsx`: Main application component and routing.
+- `/pages`: Individual page components (Home, Categories, Story, Contact, etc.).
+- `/components`: Reusable UI components (Layout, ProductCard).
+- `assets.ts`: Centralized image URL management.
+- `constants.ts`: Product data and navigation links.
+
+## Color Palette
+
+- **Royal Navy**: `#001f3f` (Primary)
+- **Royal Gold**: `#d4af37` (Accent)
+- **Royal White**: `#ffffff` (Backgrounds)
+
+## License
+
+© 2025 Royal Fit Uniform. All rights reserved.
