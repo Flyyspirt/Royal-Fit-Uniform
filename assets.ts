@@ -1,10 +1,18 @@
 // Centralized Asset Management
 // These images match the "Engineering Confidence" visual identity of Royal Fit.
 
+// HOW TO ADD YOUR OWN PHOTOS:
+// 1. Create a folder named 'public' in your project root.
+// 2. Create an 'images' folder inside 'public'.
+// 3. Add your photos there (e.g., banquet-vest.jpg).
+// 4. Update the URLs below to point to your local file (e.g., '/images/banquet-vest.jpg').
+
 export const ASSETS = {
   HERO: {
     // Professional tailoring/texture close-up for the main hero
     HOME: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=1600&auto=format&fit=crop', 
+    // Example for custom image:
+    // HOME: '/images/hero-bg.jpg', 
   },
   CATEGORY_HEROES: {
     // Team meeting for Corporate (Matches user image: Group in meeting)

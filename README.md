@@ -32,6 +32,19 @@ Royal Fit Uniform is a Hyderabad-based uniform consultancy transitioning from tr
     *   **In AI Studio/StackBlitz**: The app runs automatically.
     *   **Local Machine**: Use Vite or Create React App to serve the `index.html`.
 
+## Customization
+
+### 1. Add Custom Images
+To replace the placeholder images with your own:
+1.  Create a folder: `public/images/`
+2.  Add your files (e.g., `banquet-vest.jpg`).
+3.  Update `assets.ts` to point to `/images/banquet-vest.jpg`.
+
+### 2. Add Custom Favicon
+To use your own logo in the browser tab:
+1.  **Option A (Recommended)**: Save your logo as `favicon.ico` and place it in the `public/` folder.
+2.  **Option B**: Save as `favicon.svg` and replace the existing file in `public/`.
+
 ## Deployment (Vercel)
 
 This project is optimized for deployment on Vercel.
