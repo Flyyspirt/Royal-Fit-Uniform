@@ -18,13 +18,13 @@ The image gallery system is built with:
 Royal-Fit-Uniform/
 ├── public/
 │   └── images/
-│       ├── banquet-staff-vest.jpg.png
-│       ├── housekeeping-tunic.jpg.png
+│       ├── banquet-staff-vest.webp
+│       ├── housekeeping-tunic.webp
 │       ├── premium-scrub-set.png
-│       ├── lab-coat-professional.jpg.png
-│       ├── chef-executive-jacket.jpg.png
-│       ├── corporate-blazer.jpg.png
-│       ├── formal-office-shirt.jpg.png
+│       ├── lab-coat-professional.webp
+│       ├── chef-executive-jacket.webp
+│       ├── corporate-blazer.webp
+│       ├── formal-office-shirt.webp
 ├── components/
 │   ├── ImageGallery.tsx
 │   └── Layout.tsx
