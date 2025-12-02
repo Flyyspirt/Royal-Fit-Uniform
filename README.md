@@ -13,6 +13,15 @@ Royal Fit Uniform is a Hyderabad-based uniform consultancy transitioning from tr
 - **Routing**: React Router DOM
 - **Icons**: Lucide React
 - **Typography**: Playfair Display (Headings), Roboto (Body)
+## Documentation
+
+For comprehensive guides on project setup, image optimization, and development, visit the **[Documentation Index](./docs/README.md)**.
+
+Key Resources:
+- [Image Gallery Guide](./IMAGE_GALLERY_GUIDE.md) - Setup and usage of the gallery component
+- [Photo Optimization Guide](./PHOTO_OPTIMIZATION_GUIDE.md) - Best practices for image optimization
+- [Repository Cleanup Report](./REPOSITORY_CLEANUP_REPORT.md) - Project maintenance notes
+
 
 ## Setup Instructions
 
