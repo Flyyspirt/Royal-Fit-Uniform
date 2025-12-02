@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="atigrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF9F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E8B7D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" fill="url(#atigrad)" rx="40"/>
+  <!-- Crown -->
+  <path d="M 90 30 L 110 70 L 90 55 L 70 70 Z" fill="white" />
+  <path d="M 50 70 L 65 110 L 115 110 L 130 70 Z" fill="white" />
+  <!-- Shield -->
+  <path d="M 50 110 L 90 160 L 130 110 L 130 70 L 50 70 Z" fill="none" stroke="white" stroke-width="6" stroke-linejoin="round" />
+  <!-- RF Text -->
+  <text x="90" y="128" font-size="36" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">RF</text>
+</svg>
