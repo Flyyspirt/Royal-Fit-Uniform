@@ -10,21 +10,21 @@
       "images": [
         {
           "id": "banquet-vest",
-          "filename": "banquet-staff-vest.jpg.png",
+          "filename": "banquet-staff-vest.jpg.svg",
           "title": "Banquet Staff Vest",
           "description": "Professional formal vest with golden trim for banquet service staff",
           "alt": "Banquet server wearing navy vest with golden buttons and trim",
-          "path": "/images/banquet-staff-vest.jpg.png",
+          "path": "/images/banquet-staff-vest.jpg.svg",
           "category": "Formal",
           "featured": true
         },
         {
           "id": "hosp-tunic",
-          "filename": "housekeeping-tunic.jpg.png",
+          "filename": "housekeeping-tunic.jpg.svg",
           "title": "Housekeeping Tunic",
           "description": "Comfortable and professional housekeeping uniform for hotel staff",
           "alt": "Hotel staff member preparing white linens in housekeeping uniform",
-          "path": "/images/housekeeping-tunic.jpg.png",
+          "path": "/images/housekeeping-tunic.jpg.svg",
           "category": "Service",
           "featured": true
         }
@@ -47,11 +47,11 @@
         },
         {
           "id": "health-lab",
-          "filename": "lab-coat-professional.jpg.png",
+          "filename": "lab-coat-professional.jpg.svg",
           "title": "Professional Lab Coat",
           "description": "Crisp white lab coat for medical and pharmaceutical professionals",
           "alt": "Scientists in professional white lab coats working in laboratory",
-          "path": "/images/lab-coat-professional.jpg.png",
+          "path": "/images/lab-coat-professional.jpg.svg",
           "category": "Lab",
           "featured": false
         }
@@ -64,11 +64,11 @@
       "images": [
         {
           "id": "chef-jacket",
-          "filename": "chef-executive-jacket.jpg.png",
+          "filename": "chef-executive-jacket.jpg.svg",
           "title": "Executive Chef Jacket",
           "description": "Premium double-breasted chef jacket with golden buttons",
           "alt": "Executive chef in professional navy double-breasted chef jacket",
-          "path": "/images/chef-executive-jacket.jpg.png",
+          "path": "/images/chef-executive-jacket.jpg.svg",
           "category": "Chef",
           "featured": true
         }
@@ -81,21 +81,21 @@
       "images": [
         {
           "id": "corp-blazer",
-          "filename": "corporate-blazer.jpg.png",
+          "filename": "corporate-blazer.jpg.svg",
           "title": "Corporate Blazer",
           "description": "Navy blazer with gold trim for corporate professionals",
           "alt": "Business professional in navy corporate blazer with golden trim",
-          "path": "/images/corporate-blazer.jpg.png",
+          "path": "/images/corporate-blazer.jpg.svg",
           "category": "Business",
           "featured": true
         },
         {
           "id": "office-shirt",
-          "filename": "formal-office-shirt.jpg.png",
+          "filename": "formal-office-shirt.jpg.svg",
           "title": "Formal Office Shirt",
           "description": "Professional formal shirt for corporate offices",
           "alt": "Professional wearing formal office shirt in corporate environment",
-          "path": "/images/formal-office-shirt.jpg.png",
+          "path": "/images/formal-office-shirt.jpg.svg",
           "category": "Business",
           "featured": false
         }
