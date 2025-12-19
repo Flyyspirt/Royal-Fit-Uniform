@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "obsidian-royal-fit": {
+      "command": "npx",
+      "args": ["mcp-remote", "http://localhost:22360/sse"],
+      "env": {},
+      "description": "Royal Fit Uniform Obsidian vault via Claude Code plugin (WebSocket/SSE)"
+    }
+  }
+}

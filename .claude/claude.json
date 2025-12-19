@@ -8,5 +8,17 @@
   "settings": {
     "autoCommit": false,
     "preferredEditor": "vscode"
+  },
+  "mcpServers": {
+    "obsidian-royal-fit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Chitt\\OneDrive\\文档\\Obsidian Vault"
+      ],
+      "env": {},
+      "description": "Royal Fit Uniform Obsidian vault access"
+    }
   }
 }
