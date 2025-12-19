@@ -1,0 +1,12 @@
+{
+  "name": "Royal Fit Uniform",
+  "description": "React + TypeScript + Vite project for Royal Fit Uniform",
+  "version": "1.0.0",
+  "hooks": {
+    "sessionStart": ".claude/hooks/session-start.sh"
+  },
+  "settings": {
+    "autoCommit": false,
+    "preferredEditor": "vscode"
+  }
+}
