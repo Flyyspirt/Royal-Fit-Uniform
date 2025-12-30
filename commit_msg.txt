@@ -1,0 +1,9 @@
+Complete website rebuild with Next.js 14
+
+- Modern B2B website for Royal Fit Uniform
+- Hotel & Hospital uniform solutions
+- Product catalog with filtering
+- Multi-step quote form
+- Case studies & testimonials
+- Mobile-responsive design
+- SEO optimized
