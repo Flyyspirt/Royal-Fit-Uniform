@@ -82,8 +82,12 @@ royal-fit-website/
 │   ├── favicon.ico
 │   ├── favicon.svg
 │   └── ...
-├── docs/                   # Documentation
-└── .env.example           # Environment template
+├── mcp-server/            # MCP server for AI integration
+│   ├── index.ts          # Server implementation
+│   ├── README.md         # MCP documentation
+│   └── build/            # Compiled output
+├── docs/                  # Documentation
+└── .env.example          # Environment template
 ```
 
 ## 🔧 Configuration
@@ -148,8 +152,28 @@ npm start
 - **Airtable**: Lead management & CRM
 - **SendGrid**: Transactional emails
 - **Google Analytics**: Traffic analytics
+- **MCP Server**: AI assistant integration via Model Context Protocol
 - **Calendly**: Consultation booking (planned)
 - **Intercom**: Live chat (planned)
+
+## 🤖 MCP Server
+
+This project includes a Model Context Protocol (MCP) server that enables AI assistants like Claude to interact with the Royal Fit Uniform data and capabilities.
+
+### Features
+- Query product catalog by category, department, or search
+- Access case studies and testimonials
+- Submit leads directly to Airtable
+- Get product statistics and analytics
+
+### Quick Start
+```bash
+cd mcp-server
+npm install
+npm run build
+```
+
+For detailed setup and usage instructions, see [mcp-server/README.md](mcp-server/README.md).
 
 ## 🛣️ Roadmap
 

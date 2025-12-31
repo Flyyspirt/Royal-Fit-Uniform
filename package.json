@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
     "clsx": "^2.0.0",
     "lucide-react": "^0.294.0",
     "next": "14.0.4",

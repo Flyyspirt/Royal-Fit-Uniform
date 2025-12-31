@@ -1,0 +1,21 @@
+{
+  "name": "royal-fit-uniform-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Royal Fit Uniform website",
+  "type": "module",
+  "bin": {
+    "royal-fit-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "dev": "tsc --watch",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}

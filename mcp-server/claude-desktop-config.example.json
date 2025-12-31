@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "royal-fit-uniform": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/TO/Royal-Fit-Uniform/mcp-server/build/index.js"
+      ],
+      "env": {
+        "AIRTABLE_API_KEY": "your_airtable_api_key_here",
+        "AIRTABLE_BASE_ID": "your_airtable_base_id_here",
+        "AIRTABLE_LEADS_TABLE": "Leads"
+      }
+    }
+  }
+}

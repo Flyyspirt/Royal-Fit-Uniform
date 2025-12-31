@@ -34,6 +34,17 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# MCP Server build artifacts
+data/*.js
+data/*.d.ts
+data/*.js.map
+data/*.d.ts.map
+lib/*.js
+lib/*.d.ts
+lib/*.js.map
+lib/*.d.ts.map
+mcp-server/build/
+
 # IDE
 .idea/
 .vscode/
