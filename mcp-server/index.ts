@@ -18,9 +18,9 @@ import {
   ReadResourceRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 
-// Import data from the main application
-import { products, hotelProducts, hospitalProducts } from '../data/products.js';
-import { caseStudies, hotelCaseStudies, hospitalCaseStudies } from '../data/case-studies.js';
+// Import data from local data files
+import { products, hotelProducts, hospitalProducts } from './products-data.js';
+import { caseStudies, hotelCaseStudies, hospitalCaseStudies } from './case-studies-data.js';
 import { createLead } from './airtable-wrapper.js';
 
 // Create server instance

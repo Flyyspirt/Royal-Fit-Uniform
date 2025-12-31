@@ -4,7 +4,7 @@
     "module": "Node16",
     "moduleResolution": "Node16",
     "outDir": "./build",
-    "rootDir": "..",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -12,24 +12,13 @@
     "resolveJsonModule": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
-    "baseUrl": "..",
-    "paths": {
-      "@/*": ["*"]
-    }
+    "sourceMap": true
   },
   "include": [
-    "*.ts",
-    "../data/**/*.ts",
-    "../lib/types.ts"
+    "*.ts"
   ],
   "exclude": [
     "node_modules",
-    "build",
-    "../node_modules",
-    "../.next",
-    "../lib/airtable.ts",
-    "../lib/email.ts",
-    "../lib/utils.ts"
+    "build"
   ]
 }
