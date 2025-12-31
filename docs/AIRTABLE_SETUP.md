@@ -120,7 +120,7 @@ In Airtable, you can set up automations:
 
 1. **New Lead Notification**
    - Trigger: When record created in Leads
-   - Action: Send email to sales@royalfit.in
+   - Action: Send email to royalfituniform@gmail.com
 
 2. **Follow-up Reminder**
    - Trigger: 24 hours after Status = "New"

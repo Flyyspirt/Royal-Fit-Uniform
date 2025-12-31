@@ -116,5 +116,5 @@ Edit `components/RequestQuoteForm.tsx` - it's a 3-step form.
 
 ## Contact for Questions
 
-- Website: royalfit.in
-- Email: info@royalfit.in
+- Website: royalfituniform.com
+- Email: royalfituniform@gmail.com

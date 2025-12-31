@@ -99,13 +99,13 @@ AIRTABLE_BASE_ID=your_base_id
 
 # SendGrid
 SENDGRID_API_KEY=your_api_key
-SENDGRID_FROM_EMAIL=info@royalfit.in
+SENDGRID_FROM_EMAIL=royalfituniform@gmail.com
 
 # Analytics
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 # Site
-NEXT_PUBLIC_SITE_URL=https://royalfit.in
+NEXT_PUBLIC_SITE_URL=https://royalfituniform.com
 ```
 
 ## 🎨 Design System
@@ -172,10 +172,10 @@ npm start
 
 ## 📄 License
 
-Private - Royal Fit Uniform © 2024
+Private - Royal Fit Uniform © 2025
 
 ## 👥 Contact
 
-- **Website**: [royalfit.in](https://royalfit.in)
-- **Email**: info@royalfit.in
-- **Phone**: +91 98765 43210
+- **Website**: [royalfituniform.com](https://royalfituniform.com)
+- **Email**: royalfituniform@gmail.com
+- **Phone**: +91 93465 49694

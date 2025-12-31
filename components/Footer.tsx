@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter, ArrowRight } from 'lucide-react'
 
 const footerLinks = {
@@ -59,35 +60,41 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-sm flex items-center justify-center">
-                <span className="text-white font-display text-xl font-bold">RF</span>
+              <div className="w-12 h-12 relative flex items-center justify-center">
+                <Image
+                  src="/apple-touch-icon.png"
+                  alt="Royal Fit Logo"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
               </div>
               <div>
                 <span className="font-display text-2xl font-bold">Royal Fit</span>
-                <span className="block text-xs text-charcoal-400 tracking-widest uppercase">Uniform Excellence</span>
+                <span className="block text-xs text-charcoal-400 tracking-widest uppercase">Healthcare & Hospitality Uniform Program Engineering</span>
               </div>
             </div>
-            
+
             <p className="text-charcoal-300 mb-6 max-w-sm">
-              India's trusted B2B uniform partner for hotels and hospitals. 
-              Premium quality, customization, and reliability since 2008.
+              India's trusted B2B uniform partner for hotels and hospitals.
+              Premium quality, customization, and reliability since 2025.
             </p>
 
             {/* Contact info */}
             <div className="space-y-3">
-              <a href="tel:+919876543210" className="flex items-center gap-3 text-charcoal-300 hover:text-white transition-colors">
+              <a href="tel:+919346549694" className="flex items-center gap-3 text-charcoal-300 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-primary-500" />
-                +91 98765 43210
+                +91 93465 49694
               </a>
-              <a href="mailto:info@royalfit.in" className="flex items-center gap-3 text-charcoal-300 hover:text-white transition-colors">
+              <a href="mailto:royalfituniform@gmail.com" className="flex items-center gap-3 text-charcoal-300 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-primary-500" />
-                info@royalfit.in
+                royalfituniform@gmail.com
               </a>
               <div className="flex items-start gap-3 text-charcoal-300">
                 <MapPin className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                 <span>
-                  123 Industrial Area, Phase 2<br />
-                  Hyderabad, Telangana 500032
+                  House No: 5-6-105/1, Road No 7, Vaidehi Nagar,<br />
+                  Vanasthalipuram, Hyderabad – 500070
                 </span>
               </div>
             </div>

@@ -17,7 +17,7 @@ export default function RequestQuoteForm() {
   const [currentStep, setCurrentStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  
+
   const [formData, setFormData] = useState({
     companyType: '' as '' | 'hotel' | 'hospital' | 'other',
     companyName: '',
@@ -59,8 +59,8 @@ export default function RequestQuoteForm() {
   const nextStep = () => setCurrentStep((prev) => Math.min(prev + 1, 3))
   const prevStep = () => setCurrentStep((prev) => Math.max(prev - 1, 1))
 
-  const departments = formData.companyType === 'hotel' ? hotelDepartments : 
-                      formData.companyType === 'hospital' ? hospitalDepartments : []
+  const departments = formData.companyType === 'hotel' ? hotelDepartments :
+    formData.companyType === 'hospital' ? hospitalDepartments : []
 
   if (isSubmitted) {
     return (
@@ -148,7 +148,7 @@ export default function RequestQuoteForm() {
           {currentStep === 1 && (
             <div className="space-y-6 animate-fade-in">
               <h3 className="text-xl font-semibold text-charcoal-900 mb-6">Business Information</h3>
-              
+
               <div>
                 <label className="block text-sm font-medium text-charcoal-700 mb-3">
                   What type of establishment are you?
@@ -247,7 +247,7 @@ export default function RequestQuoteForm() {
           {currentStep === 2 && (
             <div className="space-y-6 animate-fade-in">
               <h3 className="text-xl font-semibold text-charcoal-900 mb-6">Uniform Requirements</h3>
-              
+
               {departments.length > 0 && (
                 <div>
                   <label className="block text-sm font-medium text-charcoal-700 mb-3">
@@ -338,7 +338,7 @@ export default function RequestQuoteForm() {
           {currentStep === 3 && (
             <div className="space-y-6 animate-fade-in">
               <h3 className="text-xl font-semibold text-charcoal-900 mb-6">Contact Information</h3>
-              
+
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-charcoal-700 mb-2">
@@ -390,7 +390,7 @@ export default function RequestQuoteForm() {
                     value={formData.phone}
                     onChange={(e) => updateFormData('phone', e.target.value)}
                     className="w-full px-4 py-3 border border-charcoal-300 rounded-sm"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 93465 49694"
                     required
                   />
                 </div>
