@@ -308,6 +308,200 @@ If Airtable doesn't meet needs, consider:
 
 ---
 
+## 11. Retrieving Leads from Airtable
+
+### Admin Dashboard
+
+The website includes an admin dashboard to view and manage leads directly from the browser.
+
+**Access URL**: `https://yourdomain.com/admin/leads`
+
+**Features**:
+- View all leads from Airtable in real-time
+- Filter by lead status (New Lead, Contacted, Quote Sent, etc.)
+- Expand leads to see full details
+- Refresh data on demand
+- Password protected access
+
+### Authentication
+
+The admin portal is protected with a simple password:
+
+**Default Password**: `admin123`
+
+**To Change**:
+1. Add to `.env.local`: `NEXT_PUBLIC_ADMIN_PASSWORD=your_secure_password`
+2. Restart the development server
+
+**Note**: For production, consider implementing:
+- NextAuth.js for robust authentication
+- Role-based access control (RBAC)
+- Two-factor authentication (2FA)
+- Session management with JWT
+
+### API Endpoints for Lead Retrieval
+
+#### GET `/api/leads`
+
+Retrieve leads from Airtable with optional filtering.
+
+**Query Parameters**:
+| Parameter | Type | Description | Example |
+|-----------|------|-------------|---------|
+| `status` | String | Filter by lead status | `?status=New Lead` |
+| `limit` | Number | Max records to return (default: 100) | `?limit=50` |
+| `offset` | String | Pagination offset from Airtable | `?offset=itrXXXXXX` |
+
+**Example Request**:
+```bash
+# Get all leads
+curl https://yourdomain.com/api/leads
+
+# Get only new leads
+curl https://yourdomain.com/api/leads?status=New%20Lead
+
+# Get with pagination
+curl https://yourdomain.com/api/leads?limit=20
+```
+
+**Example Response**:
+```json
+{
+  "success": true,
+  "leads": [
+    {
+      "id": "recXXXXXXXXXXXXXX",
+      "Lead Name": "Rajesh Kumar",
+      "Company Name": "Grand Hotel Mumbai",
+      "Email": "rajesh@grandhotel.com",
+      "Phone": "+91 93465 49694",
+      "Company Type": "Hotel",
+      "Status": "New Lead",
+      "Submitted At": "2026-01-01T10:30:00.000Z",
+      ...
+    }
+  ],
+  "offset": "itrXXXXXXXXXX",
+  "hasMore": true
+}
+```
+
+#### PATCH `/api/leads`
+
+Update a lead's information (e.g., change status, add notes).
+
+**Request Body**:
+```json
+{
+  "recordId": "recXXXXXXXXXXXXXX",
+  "fields": {
+    "Status": "Contacted",
+    "Notes": "Sent initial email"
+  }
+}
+```
+
+**Example Response**:
+```json
+{
+  "success": true,
+  "record": {
+    "id": "recXXXXXXXXXXXXXX",
+    "Status": "Contacted",
+    "Notes": "Sent initial email",
+    ...
+  }
+}
+```
+
+### Programmatic Access Examples
+
+#### JavaScript/TypeScript
+
+```typescript
+// Fetch all new leads
+async function getNewLeads() {
+  const response = await fetch('/api/leads?status=New Lead')
+  const data = await response.json()
+
+  if (data.success) {
+    console.log(`Found ${data.leads.length} new leads`)
+    return data.leads
+  }
+}
+
+// Update lead status
+async function updateLeadStatus(recordId: string, status: string) {
+  const response = await fetch('/api/leads', {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      recordId,
+      fields: { Status: status }
+    })
+  })
+
+  return await response.json()
+}
+```
+
+#### Python
+
+```python
+import requests
+
+# Fetch leads
+response = requests.get('https://yourdomain.com/api/leads')
+data = response.json()
+
+if data['success']:
+    for lead in data['leads']:
+        print(f"{lead['Lead Name']} - {lead['Company Name']}")
+
+# Update lead
+response = requests.patch('https://yourdomain.com/api/leads', json={
+    'recordId': 'recXXXXXXXXXXXXXX',
+    'fields': {'Status': 'Quote Sent'}
+})
+```
+
+### Direct Airtable API Access
+
+You can also query Airtable directly using their API:
+
+```bash
+curl "https://api.airtable.com/v0/YOUR_BASE_ID/Quote%20Requests" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+**Advantages of using `/api/leads` endpoint**:
+- Hides sensitive API credentials from client
+- Can add custom business logic
+- Rate limiting and caching
+- Consistent error handling
+- Format transformation
+
+### Integration with Other Tools
+
+#### Zapier Integration
+1. Connect Airtable to Zapier
+2. Set up trigger: "New record in view"
+3. Create view in Airtable: "New Leads"
+4. Add actions: Send email, create calendar event, add to CRM
+
+#### Slack Notifications
+Use Airtable automations to send Slack messages when:
+- New lead is created
+- Lead status changes to "Quote Sent"
+- High-value leads (budget > 10L) are received
+
+#### Email Marketing (Mailchimp/SendGrid)
+- Sync contacts with `Marketing Opt-In = true`
+- Create segments based on company type
+- Send targeted campaigns
+
+---
+
 ## Support
 
 For implementation help:
@@ -318,4 +512,4 @@ For implementation help:
 
 **Last Updated**: 2026-01-01
 **Prepared for**: Royal Fit Uniform Website
-**Document Version**: 1.0
+**Document Version**: 2.0 (Added Lead Retrieval)
