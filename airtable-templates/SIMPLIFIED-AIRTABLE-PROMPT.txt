@@ -1,0 +1,156 @@
+═══════════════════════════════════════════════════════════════
+SIMPLIFIED AIRTABLE PROMPT FOR AI BASE BUILDER
+═══════════════════════════════════════════════════════════════
+
+Create a CRM and operations base for Royal Fit Uniform - a B2B uniform company in India selling to hotels and hospitals.
+
+TABLES NEEDED:
+1. Leads - Customer inquiries from website
+2. Products - Uniform catalog
+3. Orders - Confirmed orders
+4. Analytics - Business metrics
+
+═══════════════════════════════════════════════════════════════
+TABLE 1: LEADS
+═══════════════════════════════════════════════════════════════
+
+Track customer quote requests with these fields:
+
+CUSTOMER INFO:
+- Company Name (text)
+- Company Type (single select: Hotel, Hospital, Other)
+- Facility Size (single select: Small, Medium, Large, Enterprise)
+- Contact Name (text)
+- Job Title (text)
+- Email (email)
+- Phone (phone number)
+
+REQUIREMENTS:
+- Departments (multiple select: Front of House, Kitchen & Service, Housekeeping, Management, Nursing & Care, Surgical & Specialist, Admin & Support, Management & Leadership)
+- Total Quantity (single select: Under 50, 50-100, 100-200, 200-500, 500+)
+- Logo Customization (checkbox)
+- Embroidery (checkbox)
+- Color Match (checkbox)
+
+SALES PIPELINE:
+- Status (single select: New, Contacted, Qualified, Proposal Sent, Won, Lost)
+- Priority (single select: High, Medium, Low)
+- Timeline (single select: Urgent, Planned, Exploratory)
+- Budget Range (single select: Under 1L, 1-5L, 5-10L, 10L+)
+- Estimated Value (currency INR)
+
+TRACKING:
+- Source (single select: Website, Phone, Email, Referral, Trade Show)
+- Assigned To (text)
+- Submitted At (date with time)
+- Follow Up Date (date)
+- Notes (long text)
+
+═══════════════════════════════════════════════════════════════
+TABLE 2: PRODUCTS
+═══════════════════════════════════════════════════════════════
+
+Manage uniform catalog:
+
+BASIC INFO:
+- Product ID (text)
+- Name (text)
+- Category (single select: Hotel, Hospital)
+- Department (single select: Front of House, Kitchen & Service, Housekeeping, Management, Nursing & Care, Surgical & Specialist, Admin & Support, Management & Leadership)
+- Description (long text)
+
+SPECIFICATIONS:
+- Fabric (text)
+- Features (long text)
+- Durability Rating (number 0-5, 1 decimal)
+- Sizes (multiple select: XS, S, M, L, XL, XXL, XXXL)
+- Colors (multiple select: Navy Blue, White, Black, Ceil Blue, Surgical Green, etc.)
+
+PRICING & STOCK:
+- Price Per Unit (currency INR)
+- Customizable (checkbox)
+- In Stock (checkbox)
+- Stock Quantity (number)
+- Minimum Order Qty (number)
+- Lead Time Days (number)
+
+═══════════════════════════════════════════════════════════════
+TABLE 3: ORDERS
+═══════════════════════════════════════════════════════════════
+
+Track confirmed orders:
+
+ORDER INFO:
+- Order ID (autonumber with prefix "ORD-")
+- Customer Name (text)
+- Company Name (text)
+- Order Date (date with time)
+
+ORDER DETAILS:
+- Products Ordered (long text)
+- Total Items (number)
+- Subtotal (currency INR)
+- Discount % (number 0-100)
+- Tax Amount (currency INR)
+- Total Amount (currency INR)
+
+STATUS TRACKING:
+- Status (single select: Draft, Confirmed, In Production, Quality Check, Shipped, Delivered, Cancelled)
+- Payment Status (single select: Pending, Partial, Paid, Refunded)
+- Payment Terms (single select: 30% Advance, 50% Advance, 100% Advance, Net 30, Net 60)
+
+FULFILLMENT:
+- Expected Delivery (date)
+- Actual Delivery (date)
+- Shipping Address (long text)
+- Tracking Number (text)
+- Notes (long text)
+
+═══════════════════════════════════════════════════════════════
+TABLE 4: ANALYTICS
+═══════════════════════════════════════════════════════════════
+
+Business performance metrics:
+
+- Date (date)
+- Period Type (single select: Daily, Weekly, Monthly, Quarterly)
+- Total Leads (number)
+- Qualified Leads (number)
+- Conversion Rate % (number with 2 decimals)
+- Total Orders (number)
+- Revenue (currency INR)
+- Average Order Value (currency INR)
+- Top Product Category (single select: Hotel, Hospital)
+- Notes (long text)
+
+═══════════════════════════════════════════════════════════════
+VIEWS NEEDED
+═══════════════════════════════════════════════════════════════
+
+LEADS TABLE VIEWS:
+- All Leads (grid view)
+- New Leads (filter: Status = New)
+- Hot Leads (filter: Priority = High OR Timeline = Urgent)
+- Pipeline (kanban view grouped by Status)
+
+PRODUCTS TABLE VIEWS:
+- All Products (grid view)
+- Hotel Products (filter: Category = Hotel)
+- Hospital Products (filter: Category = Hospital)
+- In Stock (filter: In Stock = checked)
+
+ORDERS TABLE VIEWS:
+- All Orders (grid view)
+- Active Orders (filter: Status ≠ Delivered AND Status ≠ Cancelled)
+- Pipeline (kanban view grouped by Status)
+- Payment Pending (filter: Payment Status = Pending OR Partial)
+
+ANALYTICS TABLE VIEWS:
+- All Metrics (grid view)
+- Monthly View (filter: Period Type = Monthly)
+
+═══════════════════════════════════════════════════════════════
+END OF PROMPT
+═══════════════════════════════════════════════════════════════
+
+After creating the base, I'll import CSV files with sample data.

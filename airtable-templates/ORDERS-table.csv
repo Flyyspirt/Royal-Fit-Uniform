@@ -1,0 +1,3 @@
+Order ID,Customer Name,Company Name,Order Date,Products Ordered,Total Items,Subtotal,Discount (%),Tax Amount,Total Amount,Status,Payment Status,Payment Terms,Expected Delivery,Actual Delivery,Shipping Address,Tracking Number,Notes
+ORD-001,Priya Sharma,Sample Hotel Ltd,2026-01-10,"Executive Front Desk Blazer, Concierge Dress Shirt",120,480000,10,43200,475200,In Production,Partial,30% Advance,2026-01-31,,"123 MG Road, Bangalore, Karnataka 560001",,Navy blazers with gold logo embroidery
+ORD-002,Dr. Rajesh Kumar,City Hospital,2026-01-12,"Premium Nursing Scrub Set, Surgical Scrub Set",250,595000,15,76160,671160,Confirmed,Pending,50% Advance,2026-02-15,,"456 Hospital Road, Chennai, Tamil Nadu 600001",,Ceil blue scrubs with hospital name embroidery
