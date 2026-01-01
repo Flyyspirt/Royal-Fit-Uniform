@@ -1,56 +1,56 @@
 'use client'
 
-import { Shield, Award, Clock, CheckCircle, FileCheck, Users } from 'lucide-react'
+import { Shield, Truck, Palette, Ruler, Headphones, Package } from 'lucide-react'
 
 const badges = [
   {
     icon: Shield,
-    name: 'GST Registered',
-    description: 'Fully compliant business with transparent invoicing',
+    name: 'Quality Fabrics',
+    description: 'Premium materials selected for durability and comfort',
   },
   {
-    icon: Award,
-    name: 'ISO 9001:2015',
-    description: 'Certified quality management systems',
+    icon: Palette,
+    name: 'Custom Designs',
+    description: 'Tailored uniforms to match your brand identity',
   },
   {
-    icon: FileCheck,
-    name: 'Antimicrobial Certified',
-    description: 'ISO 20645 tested for healthcare standards',
+    icon: Ruler,
+    name: 'Perfect Fit',
+    description: 'Full size range with custom alterations available',
   },
   {
-    icon: Clock,
-    name: 'On-Time Delivery',
-    description: '98% orders delivered within promised timeline',
+    icon: Truck,
+    name: 'Reliable Delivery',
+    description: 'Timely dispatch for all bulk orders',
   },
   {
-    icon: CheckCircle,
-    name: '30-Day Guarantee',
-    description: 'Full satisfaction or free replacement',
+    icon: Package,
+    name: 'Bulk Orders',
+    description: 'Competitive pricing for large quantity orders',
   },
   {
-    icon: Users,
-    name: '500+ Clients',
-    description: 'Trusted by leading establishments',
+    icon: Headphones,
+    name: 'Dedicated Support',
+    description: 'Personal account manager for your orders',
   },
 ]
 
 const guarantees = [
   {
-    title: '30-Day Satisfaction Guarantee',
-    description: "If uniforms don't meet expectations, we'll replace at no cost.",
+    title: 'Quality Assurance',
+    description: "Every uniform undergoes thorough quality checks before dispatch.",
   },
   {
-    title: 'Durability Warranty',
-    description: 'Our uniforms withstand 50+ industrial wash cycles without fading.',
+    title: 'Durable Materials',
+    description: 'Fabrics designed to withstand regular industrial washing.',
   },
   {
-    title: 'On-Time Delivery',
-    description: 'Bulk orders delivered within promised timeline or 10% discount.',
+    title: 'Timely Delivery',
+    description: 'We work to meet your delivery timelines for bulk orders.',
   },
   {
-    title: 'Customization Perfection',
-    description: 'Free logo repositioning if not perfect on first production.',
+    title: 'Customization Options',
+    description: 'Logo embroidery and custom color matching available.',
   },
 ]
 
@@ -59,31 +59,31 @@ export default function TrustBadges() {
     <section id="why-royal-fit" className="section-padding bg-gradient-to-b from-white to-primary-50/30">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-12 animate-fade-in">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-charcoal-900 mb-4">
             Why Choose Royal Fit
           </h2>
           <p className="text-xl text-charcoal-600 max-w-2xl mx-auto">
-            Industry certifications, quality guarantees, and a track record of excellence.
+            Quality uniforms, professional service, and dedicated support for your business.
           </p>
         </div>
 
         {/* Trust badges grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
           {badges.map((badge, index) => (
             <div
               key={badge.name}
-              className="group bg-white rounded-sm p-6 border border-charcoal-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              className="group bg-white rounded-sm p-5 border border-charcoal-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-50 rounded-sm flex items-center justify-center flex-shrink-0 group-hover:from-primary-200 group-hover:to-primary-100 transition-colors">
-                  <badge.icon className="w-7 h-7 text-primary-600" />
+              <div className="flex items-start gap-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary-100 to-primary-50 rounded-sm flex items-center justify-center flex-shrink-0 group-hover:from-primary-200 group-hover:to-primary-100 transition-colors">
+                  <badge.icon className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-charcoal-900 mb-1">{badge.name}</h3>
-                  <p className="text-charcoal-600 text-sm">{badge.description}</p>
+                  <p className="text-charcoal-600 text-sm leading-snug">{badge.description}</p>
                 </div>
               </div>
             </div>
@@ -91,47 +91,30 @@ export default function TrustBadges() {
         </div>
 
         {/* Guarantees section */}
-        <div className="bg-charcoal-900 rounded-sm p-8 lg:p-12">
-          <div className="text-center mb-10">
+        <div className="bg-charcoal-900 rounded-sm p-6 lg:p-10">
+          <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2">
               Our Commitments to You
             </h3>
             <p className="text-charcoal-300">
-              Every order is backed by our comprehensive quality guarantees
+              Quality and service you can rely on
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {guarantees.map((guarantee, index) => (
               <div
                 key={guarantee.title}
-                className="flex items-start gap-4 bg-white/5 rounded-sm p-6 border border-white/10 animate-slide-up"
+                className="flex items-start gap-3 bg-white/5 rounded-sm p-5 border border-white/10 animate-slide-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-5 h-5 text-charcoal-900" />
+                  <Shield className="w-4 h-4 text-charcoal-900" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">{guarantee.title}</h4>
-                  <p className="text-charcoal-300 text-sm">{guarantee.description}</p>
+                  <p className="text-charcoal-300 text-sm leading-snug">{guarantee.description}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Client logos placeholder */}
-        <div className="mt-16 text-center">
-          <p className="text-charcoal-500 uppercase tracking-widest text-sm mb-8">
-            Trusted by Industry Leaders
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16 opacity-60 grayscale">
-            {['Taj Hotels', 'Apollo Hospitals', 'ITC Hotels', 'Fortis Healthcare', 'Oberoi Group', 'Max Healthcare'].map((name) => (
-              <div
-                key={name}
-                className="px-6 py-3 bg-charcoal-100 rounded-sm"
-              >
-                <span className="font-display font-semibold text-charcoal-600">{name}</span>
               </div>
             ))}
           </div>

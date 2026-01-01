@@ -4,17 +4,17 @@ import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Building2, Stethoscope } from 'lucide-react'
 
 const stats = [
-  { value: '500+', label: 'Establishments Served' },
-  { value: '50K+', label: 'Uniforms Delivered' },
-  { value: '98%', label: 'Client Satisfaction' },
-  { value: '15+', label: 'Years Experience' },
+  { value: 'Quality', label: 'Premium Fabrics' },
+  { value: 'Custom', label: 'Branding Options' },
+  { value: 'Bulk', label: 'Order Discounts' },
+  { value: 'Quick', label: 'Turnaround Time' },
 ]
 
 const features = [
-  'Premium antimicrobial fabrics',
+  'Premium quality fabrics',
   'Custom branding & embroidery',
-  'Bulk pricing from ₹1,200/unit',
-  'Delivery in 2-4 weeks',
+  'Competitive bulk pricing',
+  'Reliable delivery timeline',
 ]
 
 export default function Hero() {
@@ -22,13 +22,13 @@ export default function Hero() {
     <section className="relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-gold-50/30" />
-      
+
       {/* Decorative elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary-100/40 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gold-100/40 rounded-full blur-3xl" />
-      
+
       {/* Subtle pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -42,7 +42,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-200 shadow-sm">
               <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-primary-700">India's Trusted B2B Uniform Partner</span>
+              <span className="text-sm font-medium text-primary-700">Your B2B Uniform Partner</span>
             </div>
 
             {/* Headline */}
@@ -52,7 +52,7 @@ export default function Hero() {
                 <span className="block text-gradient">Hotels & Hospitals</span>
               </h1>
               <p className="text-xl text-charcoal-600 max-w-xl leading-relaxed">
-                Elevate your team's professional image with durable, comfortable, and compliant uniforms. 
+                Elevate your team's professional image with durable, comfortable, and compliant uniforms.
                 From luxury hospitality to healthcare excellence.
               </p>
             </div>
@@ -60,8 +60,8 @@ export default function Hero() {
             {/* Features */}
             <div className="grid grid-cols-2 gap-3">
               {features.map((feature, i) => (
-                <div 
-                  key={feature} 
+                <div
+                  key={feature}
                   className="flex items-center gap-2 animate-slide-up"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
@@ -111,7 +111,7 @@ export default function Hero() {
                   <p className="text-sm text-white/80">Kitchen & Service</p>
                 </div>
               </div>
-              
+
               {/* Secondary images */}
               <div className="relative overflow-hidden rounded-sm shadow-xl">
                 <img
@@ -124,7 +124,7 @@ export default function Hero() {
                   <p className="font-semibold">Hospital Scrubs</p>
                 </div>
               </div>
-              
+
               <div className="relative overflow-hidden rounded-sm shadow-xl">
                 <img
                   src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&q=80"
@@ -145,8 +145,8 @@ export default function Hero() {
                   <CheckCircle2 className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-charcoal-900">ISO Certified</p>
-                  <p className="text-sm text-charcoal-500">Quality Guaranteed</p>
+                  <p className="font-semibold text-charcoal-900">Quality Assured</p>
+                  <p className="text-sm text-charcoal-500">Premium Materials</p>
                 </div>
               </div>
             </div>
@@ -157,8 +157,8 @@ export default function Hero() {
         <div className="mt-20 pt-12 border-t border-charcoal-200">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
-              <div 
-                key={stat.label} 
+              <div
+                key={stat.label}
                 className="text-center animate-slide-up"
                 style={{ animationDelay: `${i * 100 + 400}ms` }}
               >

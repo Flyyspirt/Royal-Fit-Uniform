@@ -2,21 +2,22 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://royalfituniform.com'),
   title: 'Royal Fit Uniform | Premium B2B Uniforms for Hotels & Hospitals',
-  description: 'India\'s trusted B2B uniform partner. Premium quality uniforms for hotels and hospitals with bulk pricing, customization, and fast delivery. Get a free quote today.',
-  keywords: 'hotel uniforms India, hospital scrubs, bulk uniforms, hospitality uniforms, healthcare uniforms, custom workwear, B2B uniforms',
+  description: 'Your B2B uniform partner for hotels and hospitals. Quality uniforms with bulk pricing, customization options, and reliable delivery. Request a free quote today.',
+  keywords: 'hotel uniforms, hospital scrubs, bulk uniforms, hospitality uniforms, healthcare uniforms, custom workwear, B2B uniforms, professional uniforms',
   authors: [{ name: 'Royal Fit Uniform' }],
   openGraph: {
     title: 'Royal Fit Uniform | Premium B2B Uniforms for Hotels & Hospitals',
-    description: 'India\'s trusted B2B uniform partner. Premium quality uniforms for hotels and hospitals.',
+    description: 'Your B2B uniform partner for hotels and hospitals. Quality uniforms with customization and reliable service.',
     type: 'website',
     locale: 'en_IN',
-    siteName: 'Royal Fit Uniforms',
+    siteName: 'Royal Fit Uniform',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Royal Fit Uniform | Premium B2B Uniforms',
-    description: 'India\'s trusted B2B uniform partner for hotels and hospitals.',
+    description: 'Your B2B uniform partner for hotels and hospitals.',
   },
   robots: {
     index: true,

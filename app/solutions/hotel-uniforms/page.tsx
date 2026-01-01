@@ -23,7 +23,7 @@ const departments = [
   {
     name: 'Kitchen & Service',
     description: 'Heat-resistant chef coats, aprons, and service uniforms built for durability.',
-    features: ['Stain-resistant', 'Heat-resistant', 'Antimicrobial', 'Ventilation panels'],
+    features: ['Stain-resistant', 'Heat-resistant', 'Durable fabric', 'Ventilation panels'],
     image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600',
   },
   {
@@ -44,7 +44,7 @@ export default function HotelUniformsPage() {
   return (
     <main>
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -54,22 +54,22 @@ export default function HotelUniformsPage() {
             backgroundPosition: 'center',
           }} />
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Building2 className="w-5 h-5 text-gold-400" />
               <span className="text-sm font-medium">Hospitality Solutions</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
               Hotel Uniforms
             </h1>
             <p className="text-xl text-primary-100 mb-8 leading-relaxed">
-              Elevate your hotel's brand image with premium uniforms designed for comfort, 
+              Elevate your hotel's brand image with premium uniforms designed for comfort,
               durability, and professional elegance across all departments.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
               <Link href="#quote" className="btn-gold">
                 Get Free Quote
@@ -158,11 +158,10 @@ export default function HotelUniformsPage() {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`w-4 h-4 ${
-                          i < Math.floor(product.durabilityRating)
+                        className={`w-4 h-4 ${i < Math.floor(product.durabilityRating)
                             ? 'text-gold-500 fill-gold-500'
                             : 'text-charcoal-300'
-                        }`}
+                          }`}
                       />
                     ))}
                   </div>
@@ -205,7 +204,7 @@ export default function HotelUniformsPage() {
                   <p className="text-charcoal-700 mb-4">{hotelCaseStudies[0].challenge}</p>
                   <p className="text-charcoal-700">{hotelCaseStudies[0].solution}</p>
                 </div>
-                
+
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   {hotelCaseStudies[0].results.map((result) => (
                     <div key={result.metric} className="text-center p-4 bg-primary-50 rounded-sm">
@@ -222,7 +221,7 @@ export default function HotelUniformsPage() {
                   <p className="text-sm text-charcoal-400">{hotelCaseStudies[0].testimonial.title}</p>
                 </div>
               </div>
-              
+
               <div className="relative">
                 <img
                   src={hotelCaseStudies[0].image}

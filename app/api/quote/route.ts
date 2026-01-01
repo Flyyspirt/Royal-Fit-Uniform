@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createLead } from '@/lib/airtable'
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,29 +12,21 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create lead in Airtable
-    const result = await createLead({
-      ...data,
-      source: 'Website Quote Form',
+    // Log the quote request
+    console.log('Quote request received:', {
+      name: data.name,
+      email: data.email,
+      company: data.companyName,
+      type: data.companyType,
       submittedAt: new Date().toISOString(),
     })
 
-    if (!result.success) {
-      return NextResponse.json(
-        { success: false, error: result.error },
-        { status: 500 }
-      )
-    }
-
-    // TODO: Send confirmation email via SendGrid
-    // await sendConfirmationEmail(data.email, data.name)
-
-    // TODO: Send notification to sales team
-    // await sendSalesNotification(data)
+    // In production, integrate with your CRM or database here
+    // Example: await saveToDatabase(data)
+    // Example: await sendNotificationEmail(data)
 
     return NextResponse.json({
       success: true,
-      recordId: result.recordId,
       message: 'Quote request submitted successfully',
     })
   } catch (error) {

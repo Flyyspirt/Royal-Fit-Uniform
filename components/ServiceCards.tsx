@@ -22,12 +22,12 @@ const services = [
   {
     id: 'hospital',
     title: 'Hospital Uniforms',
-    description: 'Healthcare-grade uniforms with antimicrobial properties, designed for comfort during long shifts and full compliance.',
+    description: 'Quality healthcare uniforms designed for comfort during long shifts with professional styling and durability.',
     icon: Stethoscope,
     image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80',
     departments: [
-      { name: 'Nursing & Care', features: ['Antimicrobial scrubs', 'Fluid-resistant', 'Comfort stretch'] },
-      { name: 'Surgical & Specialist', features: ['Sterile-compatible', 'Full mobility', 'Quick-dry'] },
+      { name: 'Nursing & Care', features: ['Quality scrubs', 'Fluid-resistant', 'Comfort stretch'] },
+      { name: 'Surgical & Specialist', features: ['Professional design', 'Full mobility', 'Quick-dry'] },
       { name: 'Admin & Support', features: ['Professional polos', 'Easy care', 'Practical design'] },
       { name: 'Management', features: ['Premium lab coats', 'Distinguished styling', 'Tailored fit'] },
     ],
@@ -54,7 +54,7 @@ export default function ServiceCards() {
         {/* Service cards */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {services.map((service, index) => (
-            <div 
+            <div
               key={service.id}
               className="group card-elevated overflow-hidden animate-slide-up"
               style={{ animationDelay: `${index * 150}ms` }}
@@ -67,14 +67,13 @@ export default function ServiceCards() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 via-charcoal-900/20 to-transparent" />
-                
+
                 {/* Icon badge */}
-                <div className={`absolute top-4 right-4 w-14 h-14 rounded-full flex items-center justify-center ${
-                  service.color === 'primary' ? 'bg-primary-500' : 'bg-gold-500'
-                }`}>
+                <div className={`absolute top-4 right-4 w-14 h-14 rounded-full flex items-center justify-center ${service.color === 'primary' ? 'bg-primary-500' : 'bg-gold-500'
+                  }`}>
                   <service.icon className="w-7 h-7 text-white" />
                 </div>
-                
+
                 {/* Title overlay */}
                 <div className="absolute bottom-4 left-6 right-6">
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2">
@@ -97,9 +96,8 @@ export default function ServiceCards() {
                       <ul className="space-y-1">
                         {dept.features.map((feature) => (
                           <li key={feature} className="text-sm text-charcoal-600 flex items-center gap-2">
-                            <span className={`w-1.5 h-1.5 rounded-full ${
-                              service.color === 'primary' ? 'bg-primary-500' : 'bg-gold-500'
-                            }`} />
+                            <span className={`w-1.5 h-1.5 rounded-full ${service.color === 'primary' ? 'bg-primary-500' : 'bg-gold-500'
+                              }`} />
                             {feature}
                           </li>
                         ))}
@@ -109,13 +107,12 @@ export default function ServiceCards() {
                 </div>
 
                 {/* CTA */}
-                <Link 
+                <Link
                   href={service.href}
-                  className={`inline-flex items-center gap-2 font-semibold transition-colors ${
-                    service.color === 'primary' 
-                      ? 'text-primary-600 hover:text-primary-700' 
+                  className={`inline-flex items-center gap-2 font-semibold transition-colors ${service.color === 'primary'
+                      ? 'text-primary-600 hover:text-primary-700'
                       : 'text-gold-600 hover:text-gold-700'
-                  }`}
+                    }`}
                 >
                   Explore {service.title}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

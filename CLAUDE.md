@@ -4,10 +4,10 @@ This file provides context for Claude Code when working on this project.
 
 ## Project Overview
 
-Royal Fit Uniform is a B2B uniform company serving hotels and hospitals across India. This website is built to:
+Royal Fit Uniform is a B2B uniform company serving hotels and hospitals. This website is built to:
 1. Showcase uniform products for hospitality and healthcare sectors
 2. Generate leads through a multi-step quote form
-3. Build trust with case studies, testimonials, and certifications
+3. Build trust with case studies and testimonials
 4. Convert procurement managers into customers
 
 ## Tech Stack
@@ -16,8 +16,6 @@ Royal Fit Uniform is a B2B uniform company serving hotels and hospitals across I
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
-- **Database**: Airtable (for leads)
-- **Email**: SendGrid
 
 ## Key Commands
 
@@ -39,26 +37,15 @@ npm run lint
 
 ```
 app/
-├── api/leads/route.ts    # Lead submission API
-├── solutions/            # Sector landing pages
-├── layout.tsx           # Root layout with SEO
-└── page.tsx             # Home page
+├── api/quote/route.ts   # Quote submission API
+├── solutions/           # Sector landing pages
+├── layout.tsx          # Root layout with SEO
+└── page.tsx            # Home page
 
-components/              # React components
-data/                    # Static data (products, case studies)
-lib/                     # Utilities (airtable, email, types)
-public/                  # Static assets (favicons, images)
-```
-
-## Environment Variables Required
-
-```env
-AIRTABLE_API_KEY=        # Airtable Personal Access Token
-AIRTABLE_BASE_ID=        # Airtable Base ID
-SENDGRID_API_KEY=        # SendGrid API Key
-SENDGRID_FROM_EMAIL=     # Verified sender email
-NEXT_PUBLIC_GA_ID=       # Google Analytics 4 ID
-NEXT_PUBLIC_SITE_URL=    # Production URL
+components/             # React components
+data/                   # Static data (products, case studies)
+lib/                    # Utilities (types)
+public/                 # Static assets (favicons)
 ```
 
 ## Design Tokens
@@ -83,16 +70,6 @@ Edit `data/case-studies.ts` with the new case study object.
 ### Modify the quote form
 Edit `components/RequestQuoteForm.tsx` - it's a 3-step form.
 
-### Add Airtable integration
-1. Copy `lib/airtable.ts` if not present
-2. Set environment variables
-3. Call `submitLead()` from the form
-
-### Add email notifications
-1. Copy `lib/email.ts` if not present
-2. Set SendGrid environment variables
-3. Call email functions from API route
-
 ## Brand Guidelines
 
 - Always use "Royal Fit Uniform" (singular, not "Uniforms")
@@ -108,13 +85,13 @@ Edit `components/RequestQuoteForm.tsx` - it's a 3-step form.
 
 ## SEO Keywords
 
-- Hotel uniforms India
+- Hotel uniforms
 - Hospital scrubs bulk
 - B2B uniforms
 - Hospitality workwear
 - Healthcare uniforms
 
-## Contact for Questions
+## Contact
 
 - Website: royalfituniform.com
 - Email: royalfituniform@gmail.com

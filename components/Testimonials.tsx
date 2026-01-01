@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { Star, ChevronLeft, ChevronRight, Quote, User } from 'lucide-react'
 import { testimonials } from '@/data/testimonials'
 import { cn } from '@/lib/utils'
 
@@ -17,7 +17,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="section-padding bg-gradient-to-b from-charcoal-900 to-charcoal-950 text-white overflow-hidden">
+    <section id="testimonials" className="section-padding bg-gradient-to-b from-charcoal-900 to-charcoal-950 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -35,7 +35,7 @@ export default function Testimonials() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Quote icon */}
             <Quote className="w-16 h-16 text-gold-500/30 mx-auto mb-8" />
-            
+
             {/* Testimonial content */}
             <div className="relative">
               {testimonials.map((testimonial, index) => (
@@ -70,11 +70,9 @@ export default function Testimonials() {
 
                   {/* Author */}
                   <div className="flex items-center justify-center gap-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.author}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-gold-500"
-                    />
+                    <div className="w-16 h-16 rounded-full bg-charcoal-700 flex items-center justify-center border-2 border-gold-500">
+                      <User className="w-8 h-8 text-charcoal-400" />
+                    </div>
                     <div className="text-left">
                       <p className="font-semibold text-lg">{testimonial.author}</p>
                       <p className="text-charcoal-400">{testimonial.title}</p>
@@ -157,14 +155,12 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.author}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
+                <div className="w-10 h-10 rounded-full bg-charcoal-700 flex items-center justify-center">
+                  <User className="w-5 h-5 text-charcoal-400" />
+                </div>
                 <div>
                   <p className="font-medium text-sm">{testimonial.author}</p>
-                  <p className="text-xs text-charcoal-400">{testimonial.company}</p>
+                  <p className="text-xs text-charcoal-400">{testimonial.title}, {testimonial.company}</p>
                 </div>
               </div>
             </div>

@@ -26,9 +26,9 @@ const footerLinks = {
 }
 
 const certifications = [
-  'GST Registered',
-  'ISO 9001:2015',
-  'Antimicrobial Certified',
+  'Quality Materials',
+  'Custom Designs',
+  'Bulk Orders',
 ]
 
 export default function Footer() {
@@ -46,10 +46,10 @@ export default function Footer() {
                 Get a free quote and consultation within 24 hours.
               </p>
             </div>
-            <Link href="#quote" className="btn-gold whitespace-nowrap">
+            <a href="#quote" className="btn-gold whitespace-nowrap">
               Request Free Quote
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -71,13 +71,13 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-display text-2xl font-bold">Royal Fit</span>
-                <span className="block text-xs text-charcoal-400 tracking-widest uppercase">Healthcare & Hospitality Uniform Program Engineering</span>
+                <span className="block text-xs text-charcoal-400 tracking-widest uppercase">Uniform Program Engineering</span>
               </div>
             </div>
 
             <p className="text-charcoal-300 mb-6 max-w-sm">
-              India's trusted B2B uniform partner for hotels and hospitals.
-              Premium quality, customization, and reliability since 2025.
+              Your B2B uniform partner for hotels and hospitals.
+              Quality uniforms with customization and reliable service.
             </p>
 
             {/* Contact info */}
@@ -113,15 +113,20 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links columns */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Solutions</h4>
             <ul className="space-y-3">
               {footerLinks.solutions.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.href.startsWith('#') ? (
+                    <a href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -132,9 +137,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.href.startsWith('#') ? (
+                    <a href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -145,9 +156,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.href.startsWith('#') ? (
+                    <a href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className="text-charcoal-300 hover:text-white transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

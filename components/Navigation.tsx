@@ -30,7 +30,7 @@ export default function Navigation() {
       {/* Top bar */}
       <div className="bg-charcoal-900 text-white py-2 px-6 text-sm hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <p className="text-charcoal-300">Trusted by 500+ Hotels & Hospitals across India</p>
+          <p className="text-charcoal-300">Premium Uniforms for Hotels & Hospitals</p>
           <div className="flex items-center gap-6">
             <a href="tel:+919346549694" className="flex items-center gap-2 hover:text-gold-400 transition-colors">
               <Phone className="w-4 h-4" />
@@ -61,7 +61,7 @@ export default function Navigation() {
               </div>
               <div>
                 <span className="font-display text-2xl font-bold text-charcoal-900">Royal Fit</span>
-                <span className="block text-xs text-charcoal-500 tracking-widest uppercase">Healthcare & Hospitality Uniform Program Engineering</span>
+                <span className="block text-xs text-charcoal-500 tracking-widest uppercase">Uniform Program Engineering</span>
               </div>
             </Link>
 
@@ -79,12 +79,12 @@ export default function Navigation() {
                       <ChevronDown className={cn('w-4 h-4 transition-transform', solutionsOpen && 'rotate-180')} />
                     </button>
                   ) : (
-                    <Link
+                    <a
                       href={item.href}
                       className="text-charcoal-700 hover:text-primary-600 font-medium transition-colors"
                     >
                       {item.name}
-                    </Link>
+                    </a>
                   )}
 
                   {/* Dropdown */}
@@ -115,9 +115,9 @@ export default function Navigation() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Link href="#quote" className="btn-primary">
+              <a href="#quote" className="btn-primary">
                 Get Free Quote
-              </Link>
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -157,19 +157,19 @@ export default function Navigation() {
                     </div>
                   </div>
                 ) : (
-                  <Link
+                  <a
                     href={item.href}
                     className="block font-semibold text-charcoal-900 hover:text-primary-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 )}
               </div>
             ))}
-            <Link href="#quote" className="btn-primary w-full text-center" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#quote" className="btn-primary w-full text-center" onClick={() => setMobileMenuOpen(false)}>
               Get Free Quote
-            </Link>
+            </a>
           </div>
         </div>
       </nav>

@@ -8,21 +8,21 @@ import { formatPrice } from '@/lib/utils'
 import { ArrowRight, CheckCircle, Star, Stethoscope, Quote, Shield } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Hospital Uniforms | Royal Fit - Healthcare-Grade Medical Scrubs',
-  description: 'Antimicrobial hospital uniforms for Nursing, Surgical, Admin & Management. ISO certified, fluid-resistant, and designed for comfort during long shifts.',
+  title: 'Hospital Uniforms | Royal Fit - Quality Medical Scrubs',
+  description: 'Quality hospital uniforms for Nursing, Surgical, Admin & Management. Designed for comfort during long shifts with professional styling.',
 }
 
 const departments = [
   {
     name: 'Nursing & Care',
-    description: 'Comfortable antimicrobial scrubs designed for 12-hour shifts with 4-way stretch.',
-    features: ['Antimicrobial treatment', 'Fluid-resistant', 'Moisture-wicking', '4-way stretch'],
+    description: 'Comfortable scrubs designed for long shifts with practical features.',
+    features: ['Durable fabric', 'Fluid-resistant', 'Moisture-wicking', 'Stretch comfort'],
     image: 'https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=600',
   },
   {
     name: 'Surgical & Specialist',
-    description: 'Sterile-compatible surgical scrubs meeting the highest infection control standards.',
-    features: ['Sterile-compatible', 'Full range of motion', 'Quick-dry', 'Fluid barrier'],
+    description: 'Professional surgical scrubs meeting high quality standards.',
+    features: ['Quality materials', 'Full range of motion', 'Quick-dry', 'Practical design'],
     image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600',
   },
   {
@@ -39,17 +39,17 @@ const departments = [
   },
 ]
 
-const certifications = [
-  { name: 'ISO 20645', description: 'Antimicrobial efficacy testing' },
-  { name: 'ISO 9001:2015', description: 'Quality management systems' },
-  { name: 'OEKO-TEX', description: 'Harmful substance testing' },
+const features = [
+  { name: 'Quality Materials', description: 'Durable fabrics for everyday use' },
+  { name: 'Comfort Design', description: 'Ergonomic cuts for long shifts' },
+  { name: 'Professional Look', description: 'Clean, clinical appearance' },
 ]
 
 export default function HospitalUniformsPage() {
   return (
     <main>
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gold-700 via-gold-600 to-gold-700 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -59,22 +59,22 @@ export default function HospitalUniformsPage() {
             backgroundPosition: 'center',
           }} />
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Stethoscope className="w-5 h-5 text-white" />
               <span className="text-sm font-medium">Healthcare Solutions</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
               Hospital Uniforms
             </h1>
             <p className="text-xl text-gold-100 mb-8 leading-relaxed">
-              Healthcare-grade uniforms with antimicrobial properties, designed for comfort 
-              during long shifts and full compliance with infection control standards.
+              Quality hospital uniforms designed for comfort during long shifts
+              with professional styling and durable construction.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
               <Link href="#quote" className="btn-primary bg-charcoal-900 hover:bg-charcoal-800">
                 Get Free Quote
@@ -88,19 +88,19 @@ export default function HospitalUniformsPage() {
         </div>
       </section>
 
-      {/* Certifications Banner */}
+      {/* Features Banner */}
       <section className="bg-charcoal-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
               <Shield className="w-8 h-8 text-gold-500" />
-              <span className="text-lg font-semibold">Fully Certified for Healthcare Use</span>
+              <span className="text-lg font-semibold">Quality Healthcare Uniforms</span>
             </div>
-            <div className="flex flex-wrap justify-center gap-6">
-              {certifications.map((cert) => (
-                <div key={cert.name} className="text-center">
-                  <p className="font-bold text-gold-400">{cert.name}</p>
-                  <p className="text-xs text-charcoal-400">{cert.description}</p>
+            <div className="flex flex-wrap justify-center gap-8">
+              {features.map((feat) => (
+                <div key={feat.name} className="text-center">
+                  <p className="font-bold text-gold-400">{feat.name}</p>
+                  <p className="text-xs text-charcoal-400">{feat.description}</p>
                 </div>
               ))}
             </div>
@@ -159,7 +159,7 @@ export default function HospitalUniformsPage() {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-charcoal-900 mb-4">
               Featured Hospital Uniforms
             </h2>
-            <p className="text-charcoal-600">Browse our healthcare-grade uniform products</p>
+            <p className="text-charcoal-600">Browse our quality hospital uniform products</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -174,12 +174,6 @@ export default function HospitalUniformsPage() {
                   <div className="absolute top-3 left-3 px-3 py-1 bg-gold-600 rounded-full text-xs font-semibold text-white">
                     {product.department}
                   </div>
-                  {product.features.includes('Antimicrobial treatment') && (
-                    <div className="absolute top-3 right-3 px-2 py-1 bg-charcoal-900/80 rounded-full text-xs text-white flex items-center gap-1">
-                      <Shield className="w-3 h-3" />
-                      Antimicrobial
-                    </div>
-                  )}
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-charcoal-900 mb-2 group-hover:text-gold-600 transition-colors">
@@ -189,11 +183,10 @@ export default function HospitalUniformsPage() {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`w-4 h-4 ${
-                          i < Math.floor(product.durabilityRating)
+                        className={`w-4 h-4 ${i < Math.floor(product.durabilityRating)
                             ? 'text-gold-500 fill-gold-500'
                             : 'text-charcoal-300'
-                        }`}
+                          }`}
                       />
                     ))}
                   </div>
@@ -271,7 +264,7 @@ export default function HospitalUniformsPage() {
             Ready to Upgrade Your Healthcare Uniforms?
           </h2>
           <p className="text-xl text-gold-100 mb-8">
-            Get certified, antimicrobial uniforms with a customized quote within 24 hours.
+            Get quality uniforms with a customized quote for your healthcare facility.
           </p>
           <Link href="/#quote" className="btn-primary bg-charcoal-900 hover:bg-charcoal-800">
             Request Free Quote
