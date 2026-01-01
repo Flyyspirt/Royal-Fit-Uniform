@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createLead } from '@/lib/airtable'
+import { createLead } from '@/lib/airtable-with-fallback'
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create lead in Airtable
+    // Create lead in Airtable (with local fallback for testing)
     const result = await createLead({
       ...data,
       source: 'Website Quote Form',
@@ -27,6 +27,12 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Build response message
+    let message = 'Quote request submitted successfully'
+    if (result.fallbackUsed) {
+      message += ' (saved locally for testing - will sync to Airtable in production)'
+    }
+
     // TODO: Send confirmation email via SendGrid
     // await sendConfirmationEmail(data.email, data.name)
 
@@ -36,7 +42,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       recordId: result.recordId,
-      message: 'Quote request submitted successfully',
+      message: message,
+      mode: result.mode,
+      fallbackUsed: result.fallbackUsed || false,
     })
   } catch (error) {
     console.error('Quote submission error:', error)
