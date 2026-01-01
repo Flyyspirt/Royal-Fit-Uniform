@@ -17,6 +17,8 @@ A modern, conversion-optimized website for Royal Fit Uniform built with Next.js 
 - ✅ Testimonials carousel
 - ✅ Trust badges & certifications
 - ✅ 3-step multi-step quote form
+- ✅ Airtable integration for lead management
+- ✅ API endpoints for leads, orders, and analytics
 - ✅ Mobile-first responsive design
 - ✅ SEO optimized with metadata
 
@@ -26,6 +28,8 @@ A modern, conversion-optimized website for Royal Fit Uniform built with Next.js 
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Fonts**: Cormorant Garamond + Source Sans 3
+- **Database**: Airtable
+- **Email**: SendGrid (planned)
 
 ## 🚀 Quick Start
 
@@ -37,8 +41,10 @@ cd royal-fit-website
 # Install dependencies
 npm install
 
-# Create environment file
+# Set up Airtable integration (10 minutes)
+# See QUICKSTART.md for detailed instructions
 cp .env.example .env.local
+# Edit .env.local with your Airtable credentials
 
 # Run development server
 npm run dev
@@ -46,44 +52,56 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the website.
 
+### 📚 Documentation
+- **Quick Setup**: See [QUICKSTART.md](QUICKSTART.md) - Get Airtable connected in 10 minutes
+- **Complete Guide**: See [AIRTABLE_SETUP.md](AIRTABLE_SETUP.md) - Full schema, automations, and advanced features
+- **Project Context**: See [CLAUDE.md](CLAUDE.md) - Project overview and guidelines
+
 ## 📁 Project Structure
 
 ```
 royal-fit-website/
 ├── app/
-│   ├── api/                 # API routes
-│   │   └── leads/          # Lead submission endpoint
-│   ├── solutions/          # Solution pages
+│   ├── api/                    # API routes
+│   │   ├── quote/             # Quote submission (POST)
+│   │   ├── leads/             # Lead management (GET, PATCH)
+│   │   ├── orders/            # Order creation (POST)
+│   │   └── analytics/         # Analytics (GET, POST)
+│   ├── solutions/             # Solution pages
 │   │   ├── hotel-uniforms/
 │   │   └── hospital-uniforms/
-│   ├── globals.css         # Global styles
-│   ├── layout.tsx          # Root layout
-│   └── page.tsx            # Home page
+│   ├── globals.css            # Global styles
+│   ├── layout.tsx             # Root layout
+│   └── page.tsx               # Home page
 ├── components/
-│   ├── Navigation.tsx      # Header & nav
-│   ├── Hero.tsx           # Hero section
-│   ├── ServiceCards.tsx   # Service showcase
-│   ├── ProductCatalog.tsx # Product grid
-│   ├── CaseStudies.tsx    # Success stories
-│   ├── Testimonials.tsx   # Client reviews
-│   ├── TrustBadges.tsx    # Certifications
-│   ├── RequestQuoteForm.tsx # Quote form
-│   └── Footer.tsx         # Footer
+│   ├── Navigation.tsx         # Header & nav
+│   ├── Hero.tsx              # Hero section
+│   ├── ServiceCards.tsx      # Service showcase
+│   ├── ProductCatalog.tsx    # Product grid
+│   ├── CaseStudies.tsx       # Success stories
+│   ├── Testimonials.tsx      # Client reviews
+│   ├── TrustBadges.tsx       # Certifications
+│   ├── RequestQuoteForm.tsx  # Quote form (connected to API)
+│   └── Footer.tsx            # Footer
 ├── data/
-│   ├── products.ts        # Product catalog
-│   ├── case-studies.ts    # Case studies
-│   └── testimonials.ts    # Testimonials
+│   ├── products.ts           # Product catalog
+│   ├── case-studies.ts       # Case studies
+│   └── testimonials.ts       # Testimonials
 ├── lib/
-│   ├── airtable.ts        # Airtable client
-│   ├── email.ts           # Email service
-│   ├── types.ts           # TypeScript types
-│   └── utils.ts           # Utilities
-├── public/
+│   ├── airtable.ts           # Airtable integration (full CRUD)
+│   ├── email.ts              # Email service
+│   ├── types.ts              # TypeScript types
+│   └── utils.ts              # Utilities
+├── airtable-templates/        # CSV import templates
+│   └── products-import.csv
+├── public/                    # Static assets
 │   ├── favicon.ico
 │   ├── favicon.svg
 │   └── ...
-├── docs/                   # Documentation
-└── .env.example           # Environment template
+├── AIRTABLE_SETUP.md         # Complete Airtable guide
+├── QUICKSTART.md             # 10-minute setup guide
+├── CLAUDE.md                 # Project documentation
+└── .env.example              # Environment template
 ```
 
 ## 🔧 Configuration
@@ -145,30 +163,34 @@ npm start
 
 ## 📊 Integrations
 
-- **Airtable**: Lead management & CRM
-- **SendGrid**: Transactional emails
-- **Google Analytics**: Traffic analytics
+- **Airtable**: Lead management, CRM, product catalog, order tracking ✅
+- **SendGrid**: Transactional emails (planned)
+- **Google Analytics**: Traffic analytics (configured)
 - **Calendly**: Consultation booking (planned)
 - **Intercom**: Live chat (planned)
 
 ## 🛣️ Roadmap
 
-### Phase 1 ✅ (Current)
+### Phase 1 ✅ (Completed)
 - [x] Core website with all sections
 - [x] Product catalog
 - [x] Quote form
 - [x] Case studies & testimonials
+- [x] Airtable integration
+- [x] API endpoints (leads, orders, analytics)
 
-### Phase 2 (Next)
-- [ ] Airtable integration
-- [ ] Email notifications
-- [ ] Live chat
-- [ ] Blog section
+### Phase 2 (In Progress)
+- [ ] Email notifications (SendGrid)
+- [ ] Airtable automations
+- [ ] Sales dashboard
+- [ ] Live chat integration
 
 ### Phase 3 (Future)
 - [ ] Customer portal
-- [ ] Order tracking
+- [ ] Order tracking interface
 - [ ] SmartFit AI sizing
+- [ ] Blog section
+- [ ] Multi-currency support
 
 ## 📄 License
 
