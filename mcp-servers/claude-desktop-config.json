@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "airtable-royal-fit": {
+      "command": "node",
+      "args": [
+        "/home/user/Royal-Fit-Uniform/mcp-servers/dist/airtable-server.js"
+      ],
+      "env": {
+        "AIRTABLE_API_KEY": "pat19ImPCVFwmc9sT.2a4c7cd2134108783dbe83b2c636999753bc4eb4ce946a62ddd099d7efd361ff",
+        "AIRTABLE_BASE_ID": "appteHbWjuWHeAWgf"
+      }
+    }
+  }
+}
