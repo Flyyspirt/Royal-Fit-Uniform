@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B2B Corporate Uniform Supplier for Hotels & Enterprises | Royal Fit Uniform</title>
+  <meta name="description" content="Premium enterprise uniform programs for hotels, resorts, and businesses. Custom fit, bulk orders, and reliable B2B uniform manufacturing. Request a quote." />
+  <meta name="keywords" content="uniform supplier Hyderabad, hotel uniforms Telangana, resort uniforms, hospitality uniform manufacturer" />
+  <link rel="canonical" href="https://royalfituniform.com/" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Royal Fit Uniform — Hospitality Uniforms Engineered for Fit" />
+  <meta property="og:description" content="Premium uniform programs for hotels & resorts. Custom fit, on-time delivery, segment-specific fabrics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://royalfituniform.com/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Royal Fit Uniform",
+    "description": "Hospitality uniform programs engineered for fit, delivery, and confidence.",
+    "url": "https://royalfituniform.com",
+    "telephone": "+91-9346549694",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "FLAT NO 1A/25 EP, H.NO. 5-3-650/2, VIJAYAPURI COLONY, PHASE-2, Vanasthalipuram",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500070",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["Telangana", "Andhra Pradesh", "Karnataka"],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- GA4: Add your measurement ID here once set up -->
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay">
+    <div class="loading-content">
+      <img src="/favicon.svg" alt="Royal Fit Logo" class="loading-icon" width="64" height="64" fetchpriority="high">
+      <span class="loading-text">Royal Fit Uniform</span>
+    </div>
+  </div>
+
+  <!-- ========== DESKTOP HEADER ========== -->
+  <header class="fixed top-0 w-full z-50 h-[72px] bg-surface/80 glass-header hidden md:flex justify-between items-center px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto left-0 right-0 transition-shadow duration-300">
+    <div class="flex items-center gap-8">
+      <a href="/" class="font-headline text-[var(--text-headline-md)] font-bold tracking-tighter text-primary flex items-center"><img src="/favicon.svg" alt="Royal Fit Uniform" class="h-8 md:h-10"></a>
+      <nav class="flex gap-6">
+        <a href="/solutions.html" class="text-primary hover:text-secondary transition-colors font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold">Solutions</a>
+        <a href="/lookbook.html" class="text-primary hover:text-secondary transition-colors font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold">Lookbook</a>
+        <a href="/about.html" class="text-primary hover:text-secondary transition-colors font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold">Our Story</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="tel:+919346549694" class="text-primary hover:text-secondary transition-all duration-300">
+        <span class="material-symbols-outlined">call</span>
+      </a>
+      <a href="/contact.html" class="bg-primary text-on-primary font-headline text-[var(--text-label-md)] uppercase px-6 py-3 rounded-full hover:bg-primary-container transition-colors tracking-widest font-semibold">Get Quote</a>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE HEADER ========== -->
+  <header class="fixed top-0 w-full z-50 h-[72px] bg-surface/80 glass-header flex md:hidden justify-between items-center px-[var(--spacing-margin-mobile)]">
+    <a href="/" class="font-headline text-[var(--text-headline-md)] font-bold tracking-tighter text-primary flex items-center"><img src="/favicon.svg" alt="Royal Fit Uniform" class="h-8 md:h-10"></a>
+    <button id="mobile-hamburger" class="text-primary p-2" aria-label="Open menu">
+      <span class="material-symbols-outlined text-[28px]">menu</span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-[55] hidden"></div>
+
+  <!-- Mobile Menu Drawer -->
+  <nav id="mobile-menu" class="fixed top-0 right-0 h-full w-[280px] bg-surface z-[60] transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col">
+    <div class="flex justify-between items-center h-[72px] px-6 border-b border-surface-variant">
+      <span class="font-headline text-[var(--text-headline-md)] font-bold text-primary">Menu</span>
+      <button id="mobile-hamburger" class="text-primary p-2" aria-label="Close menu">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col p-6 gap-6">
+      <a href="/" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Home</a>
+      <a href="/solutions.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Solutions</a>
+      <a href="/lookbook.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Lookbook</a>
+      <a href="/about.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Our Story</a>
+      <a href="/contact.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Contact</a>
+      <hr class="border-surface-variant" />
+      <a href="/contact.html" class="bg-primary text-on-primary font-headline text-[var(--text-label-md)] uppercase px-6 py-3 rounded-full text-center tracking-widest font-semibold hover:bg-primary-container transition-colors">Get Quote</a>
+      <a href="tel:+919346549694" class="flex items-center gap-2 text-secondary font-headline text-[var(--text-body-md)]">
+        <span class="material-symbols-outlined text-[20px]">call</span>
+        +91-9346549694
+      </a>
+    </div>
+  </nav>
+
+  <main id="swup" class="transition-fade">
+    <!-- ========== HERO SECTION ========== -->
+    <section class="relative w-full h-screen min-h-[600px] flex items-center justify-center pt-[72px]">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbpjK77uCHDQtEv7RcUDRFRqYkCP5AasP5X-p3ZnS1lcW4vPdn8OFIpUGBfhKvavjg3W2Klu8vy7o7jK0GHwq-FLUZVRDjmPY3d9zn3H7tyw4X2hXlfAFtfDrzYvA9AzDDLWGyw31i6hy--TClZAtJUoUkkWp77lzzJXGAuBT1KpLnvvS6__5gOagGGAWM4iOej-yFzr4_yLrZ1Sim3OJfcvPm8SPENeo8xBQYeVT-SzZwXEhnmRxzYoXCit6fNoErO11K8SaQ2Q"
+          alt="Hotel concierge and executive chef in premium Royal Fit uniforms in a luxury hotel lobby"
+          class="w-full h-full object-cover opacity-80"
+          fetchpriority="high"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-transparent"></div>
+      </div>
+      <div class="relative z-10 text-center px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] max-w-4xl mx-auto flex flex-col items-center">
+        <h1 class="font-headline text-[clamp(28px,5vw,48px)] font-bold text-on-primary mb-6 drop-shadow-lg leading-[1.1] tracking-tight">
+          ENGINEERED FOR FIT.<br/>DELIVERED WITH PRECISION.
+        </h1>
+        <p class="font-body text-[var(--text-body-lg)] text-on-primary/90 mb-10 max-w-2xl leading-relaxed">
+          Hospitality uniform programs for elite hotels &amp; resorts.
+        </p>
+        <a href="/contact.html" class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold hover:bg-secondary-fixed-dim transition-colors min-h-[48px] inline-flex items-center">
+          Build Your Uniform Program
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== TRUST STRIP (Marquee) ========== -->
+    <section class="bg-surface py-4 border-b border-surface-variant marquee-container">
+      <div class="marquee-content font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant flex gap-12 whitespace-nowrap px-4 font-semibold">
+        <span>Local Manufacturing</span><span class="opacity-40">•</span>
+        <span>Consistent Sizing</span><span class="opacity-40">•</span>
+        <span>Segment-Specific Fabrics</span><span class="opacity-40">•</span>
+        <span>100% On-Time Delivery</span><span class="opacity-40">•</span>
+        <span>100+ MOQ Programs</span><span class="opacity-40">•</span>
+        <span>Local Manufacturing</span><span class="opacity-40">•</span>
+        <span>Consistent Sizing</span><span class="opacity-40">•</span>
+        <span>Segment-Specific Fabrics</span><span class="opacity-40">•</span>
+        <span>100% On-Time Delivery</span><span class="opacity-40">•</span>
+        <span>100+ MOQ Programs</span><span class="opacity-40">•</span>
+      </div>
+    </section>
+
+    <!-- ========== DEPARTMENT LOOKBOOK ========== -->
+    <section class="py-[var(--spacing-stack-lg)] px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto">
+      <h2 class="reveal font-headline text-[var(--text-headline-lg)] font-bold text-primary mb-8 tracking-tight">Curated Departments</h2>
+      <div class="flex overflow-x-auto gap-[var(--spacing-gutter)] pb-4 hide-scrollbar snap-x snap-mandatory">
+
+        <!-- Front of House -->
+        <a href="/lookbook.html" class="min-w-[280px] w-[280px] aspect-[4/5] relative snap-start group cursor-pointer reveal reveal-delay-1 block flex-shrink-0 rounded-lg overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuxDetbIiRDwmz6Rzeszzm4Bz6fDW-sRvgoq5FAVmA8pFF0WC1OYCXsLhCqjBhlk6wNw0PxOEownnhJRMYntkVy766s2mCMqncJg3felOVS3RUHINAQ3U6FIN7cnAddxaEwftVxj170XBWbuf4hBh0g5HoA7L67DTOCaRK0B48YAc34C5q057aIz0WEEzKj6mQrAh1ExQDogYZpe4UMINKav8IlmJ94-WNG-XwSuPERDfKzh2nGXGqQDAzB457FswOmauaaTROUQ"
+            alt="Front of House hotel employee in tailored navy uniform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-on-primary">Front of House</h3>
+          </div>
+        </a>
+
+        <!-- Culinary & Kitchen -->
+        <a href="/lookbook.html" class="min-w-[280px] w-[280px] aspect-[4/5] relative snap-start group cursor-pointer reveal reveal-delay-2 block flex-shrink-0 rounded-lg overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCt_XRjXOJYGfNpbH02gdAY4uRLrMF0wXa_0syqC7WGe5Gn26ZrLMS9dvmmG2IWj6CmE6zaea_lwso5qQ1MICuIgkphsH7TfSLid2JDJvDlcyHzrECeZXiIEkPSJbdqFemuDIhvS-yVUbk6AChFHrEFR_-uBoHEyh7m_9gwvN-1ItPKtRtWGSZhA8od1U5ceyoESsgCDJGZtaXlMnrMXj80farWtxH0EBonmRBiG3DZiQmbLoYZSLUamNogjvwHRwZty1drTmtJQ"
+            alt="Executive chef in pristine white chef coat" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-on-primary">Culinary &amp; Kitchen</h3>
+          </div>
+        </a>
+
+        <!-- Housekeeping -->
+        <a href="/lookbook.html" class="min-w-[280px] w-[280px] aspect-[4/5] relative snap-start group cursor-pointer reveal reveal-delay-3 block flex-shrink-0 rounded-lg overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCOjHI5u2vAMbo12FHaRgbPGw_X329PD2rXibZthcfYxi2aB23gQTImu--lAGGj32KGc2pkz22OLN03b-2-OFbt6w_aHOMWIaW0LMH_6sZsXiMjto0NQ1labeZyOyK1upi3J3jInWIB1xuZbMO1xQLt6Y0Gdry4Yd33JpMbhd-vNFLvJ2Iq2eQRQBZuBb5-mLTyH9aKn__nsL4euWt74btnQjGCEuRp93ZklFrdI9y5f4Bypw1z0e8uDfAs9tWs8xpGLqiOdwUvg"
+            alt="Housekeeping professional in stylish grey uniform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-on-primary">Housekeeping</h3>
+          </div>
+        </a>
+
+        <!-- Resort & Outdoor -->
+        <a href="/lookbook.html" class="min-w-[280px] w-[280px] aspect-[4/5] relative snap-start group cursor-pointer reveal reveal-delay-4 block flex-shrink-0 rounded-lg overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCasztGbr-SFG824RNctSU3ehPd4U8BlYFLTY1cozR3nZyoCyw_Dcd1i4_TV1bkLhOTnNkHS1NAuQLa4h-yIh_1DbdYoO-TpuctkUkr0kecUZ7s5uRuuXXcbRUTBrFeMLSSM7z8CMpjhx_QT2n29NNMC_ImyIyq8Hsg0MOa3zm_UK9fZWT_oBq8Wrm3Wv-9_FSCGvM6rMREkx-6EYKtxk00c4UnRoUN31DqDFeE3MZcHwNz4pNt1tz8jZMXf7kwoodSqgQbiqXAGQ"
+            alt="Resort staff member in breathable outdoor uniform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-on-primary">Resort &amp; Outdoor</h3>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========== ESSENTIAL PIECES (Catalog Preview) ========== -->
+    <section class="py-[var(--spacing-stack-lg)] px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto bg-surface-container-low">
+      <h2 class="reveal font-headline text-[var(--text-headline-lg)] font-bold text-primary mb-8 text-center tracking-tight">Essential Pieces</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+        <!-- Chef Professional Coat -->
+        <a href="/lookbook.html#f-b-kitchen" class="reveal reveal-delay-1 relative bg-surface p-4 group cursor-pointer block rounded-lg hover:shadow-lg transition-shadow duration-300">
+          <img src="/catalog/f-b-kitchen-chef-professional-coat-black-chef-coat-black-chef-coat-1.webp"
+            alt="Chef Professional Coat" class="w-full aspect-[3/4] object-cover mb-4 mix-blend-multiply rounded" loading="lazy" />
+          <div class="text-left">
+            <h4 class="font-body text-[var(--text-body-md)] font-semibold text-primary">Chef Professional Coat</h4>
+            <p class="font-headline text-[var(--text-label-md)] text-on-surface-variant mt-1 uppercase tracking-widest">F&B-Kitchen</p>
+          </div>
+          <div class="absolute bottom-4 right-4 w-8 h-8 bg-surface rounded-full flex items-center justify-center border border-outline shadow-sm hover:border-secondary transition-colors z-10">
+            <span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+          </div>
+        </a>
+  
+        <!-- Kitchen Utlity Shirt -->
+        <a href="/lookbook.html#f-b-kitchen" class="reveal reveal-delay-2 relative bg-surface p-4 group cursor-pointer block rounded-lg hover:shadow-lg transition-shadow duration-300">
+          <img src="/catalog/f-b-kitchen-kitchen-utlity-shirt-black-kitchen-utlity-shirt-black-kitchen-utlity-shirt-1.webp"
+            alt="Kitchen Utlity Shirt" class="w-full aspect-[3/4] object-cover mb-4 mix-blend-multiply rounded" loading="lazy" />
+          <div class="text-left">
+            <h4 class="font-body text-[var(--text-body-md)] font-semibold text-primary">Kitchen Utlity Shirt</h4>
+            <p class="font-headline text-[var(--text-label-md)] text-on-surface-variant mt-1 uppercase tracking-widest">F&B-Kitchen</p>
+          </div>
+          <div class="absolute bottom-4 right-4 w-8 h-8 bg-surface rounded-full flex items-center justify-center border border-outline shadow-sm hover:border-secondary transition-colors z-10">
+            <span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+          </div>
+        </a>
+  
+        <!-- Formal Shirt -->
+        <a href="/lookbook.html#formal-shirt" class="reveal reveal-delay-3 relative bg-surface p-4 group cursor-pointer block rounded-lg hover:shadow-lg transition-shadow duration-300">
+          <img src="/catalog/formal-shirt-formal-shirt-default-blue-formal-shot-heroshot.webp"
+            alt="Formal Shirt" class="w-full aspect-[3/4] object-cover mb-4 mix-blend-multiply rounded" loading="lazy" />
+          <div class="text-left">
+            <h4 class="font-body text-[var(--text-body-md)] font-semibold text-primary">Formal Shirt</h4>
+            <p class="font-headline text-[var(--text-label-md)] text-on-surface-variant mt-1 uppercase tracking-widest">Formal Shirt</p>
+          </div>
+          <div class="absolute bottom-4 right-4 w-8 h-8 bg-surface rounded-full flex items-center justify-center border border-outline shadow-sm hover:border-secondary transition-colors z-10">
+            <span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+          </div>
+        </a>
+  
+        <!-- Bellhop Jacket & Trouser -->
+        <a href="/lookbook.html#front-office" class="reveal reveal-delay-4 relative bg-surface p-4 group cursor-pointer block rounded-lg hover:shadow-lg transition-shadow duration-300">
+          <img src="/catalog/front-office-bellhop-jacket-trouser-black-bellhop-uniform-black-bellhop-uniform-1.webp"
+            alt="Bellhop Jacket & Trouser" class="w-full aspect-[3/4] object-cover mb-4 mix-blend-multiply rounded" loading="lazy" />
+          <div class="text-left">
+            <h4 class="font-body text-[var(--text-body-md)] font-semibold text-primary">Bellhop Jacket & Trouser</h4>
+            <p class="font-headline text-[var(--text-label-md)] text-on-surface-variant mt-1 uppercase tracking-widest">Front Office</p>
+          </div>
+          <div class="absolute bottom-4 right-4 w-8 h-8 bg-surface rounded-full flex items-center justify-center border border-outline shadow-sm hover:border-secondary transition-colors z-10">
+            <span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+          </div>
+        </a>
+  
+      </div>
+    </section>
+
+    <!-- ========== PROCESS PREVIEW ========== -->
+    <section class="py-[var(--spacing-stack-lg)] px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto">
+      <h2 class="reveal font-headline text-[var(--text-headline-lg)] font-bold text-primary mb-12 text-center tracking-tight">How It Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div class="reveal reveal-delay-1 text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-[32px] text-secondary">chat</span>
+          </div>
+          <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-2">1. Inquiry</h3>
+          <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Tell us about your property, staff size, and uniform requirements.</p>
+        </div>
+        <div class="reveal reveal-delay-2 text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-[32px] text-secondary">checkroom</span>
+          </div>
+          <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-2">2. Sample</h3>
+          <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Receive fabric swatches and sizing samples tailored to your brand.</p>
+        </div>
+        <div class="reveal reveal-delay-3 text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-[32px] text-secondary">local_shipping</span>
+          </div>
+          <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-2">3. Deliver</h3>
+          <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Production and delivery within 2–3 weeks. 100% on-time guarantee.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LEAD CAPTURE ========== -->
+    <section id="quote" class="bg-primary-container py-[var(--spacing-stack-lg)] px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)]">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="reveal font-headline text-[var(--text-headline-lg)] font-bold text-secondary-fixed mb-8 tracking-tight">Ready to upgrade your property's image?</h2>
+        <form data-rf-form class="flex flex-col gap-6 max-w-md mx-auto">
+          <div class="form-field">
+            <input type="text" required placeholder="Property Name"
+              class="w-full bg-transparent border-0 border-b border-secondary text-on-primary placeholder:text-on-primary/50 focus:ring-0 focus:border-secondary-fixed transition-colors px-0 py-3 font-body text-[var(--text-body-md)]" />
+            <p class="field-error hidden text-error text-[var(--text-label-md)] mt-1">Property name is required</p>
+          </div>
+          <div class="form-field">
+            <input type="email" required placeholder="Work Email"
+              class="w-full bg-transparent border-0 border-b border-secondary text-on-primary placeholder:text-on-primary/50 focus:ring-0 focus:border-secondary-fixed transition-colors px-0 py-3 font-body text-[var(--text-body-md)]" />
+            <p class="field-error hidden text-error text-[var(--text-label-md)] mt-1">Valid email is required</p>
+          </div>
+          <div class="flex justify-between items-end border-b border-secondary pb-3">
+            <span class="text-on-primary/50 font-body text-[var(--text-body-md)]">Approximate Staff Size</span>
+            <select class="bg-transparent border-0 text-on-primary focus:ring-0 py-0 pr-8 font-body text-[var(--text-body-md)]">
+              <option class="text-primary" value="<50">&lt;50</option>
+              <option class="text-primary" value="50-200">50 – 200</option>
+              <option class="text-primary" value="200-500">200 – 500</option>
+              <option class="text-primary" value="500+">500+</option>
+            </select>
+          </div>
+          <button type="submit"
+            class="mt-6 bg-secondary text-on-secondary px-8 py-4 rounded-full font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold hover:bg-secondary-fixed-dim transition-colors w-full min-h-[48px]">
+            Request Consultation
+          </button>
+        </form>
+        <!-- Success State -->
+        <div class="form-success mt-8">
+          <span class="material-symbols-outlined text-[48px] text-secondary-fixed mb-4 block">check_circle</span>
+          <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-secondary-fixed mb-2">Thank you!</h3>
+          <p class="text-on-primary/80 font-body text-[var(--text-body-md)] mb-4">We'll get back to you within 24 hours.</p>
+          <a href="tel:+919346549694" class="text-secondary-fixed hover:text-secondary-fixed-dim transition-colors font-headline text-[var(--text-body-md)]">
+            Or call us now: +91-9346549694
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-primary pt-[var(--spacing-stack-lg)] pb-[var(--spacing-stack-md)]">
+    <div class="flex flex-col md:flex-row justify-between items-start w-full px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto border-t border-on-primary-container/20 pt-8 gap-8">
+      <div class="mb-4 md:mb-0">
+        <span class="font-headline text-[var(--text-headline-lg)] font-bold text-secondary-fixed block mb-4">Royal Fit Uniform</span>
+        <p class="font-body text-[var(--text-body-md)] text-on-primary/60 mb-2">Hospitality uniform programs engineered for fit.</p>
+        <p class="font-body text-[var(--text-label-md)] text-on-primary/40">GSTIN: 36CFAPC9753D1ZM</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <nav class="flex flex-wrap gap-6">
+          <a href="/solutions.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Solutions</a>
+          <a href="/lookbook.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Lookbook</a>
+          <a href="/about.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Our Story</a>
+          <a href="/contact.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Contact</a>
+        </nav>
+        <div class="flex flex-col gap-1">
+          <a href="tel:+919346549694" class="font-body text-[var(--text-body-md)] text-on-primary/60 hover:text-on-primary transition-colors">+91-9346549694</a>
+          <p class="font-body text-[var(--text-label-md)] text-on-primary/40 max-w-xs">Vanasthalipuram, Hyderabad, Telangana 500070</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 pb-4">
+      <p class="font-body text-[var(--text-label-md)] text-on-primary/30">&copy; 2024 Royal Fit Uniform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

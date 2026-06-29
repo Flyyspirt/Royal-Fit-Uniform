@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+/* ========================================
+   Royal Fit Uniform — Design System
+   Material Design 3 token palette
+   ======================================== */
+
+@theme {
+  /* ---- Colors ---- */
+  --color-error: #ba1a1a;
+  --color-secondary-fixed-dim: #e9c176;
+  --color-on-primary-container: #8192a7;
+  --color-outline-variant: #c4c6cd;
+  --color-tertiary-container: #2a2a2a;
+  --color-primary-fixed: #d2e4fb;
+  --color-on-primary: #ffffff;
+  --color-inverse-primary: #b7c8de;
+  --color-primary: #041627;
+  --color-on-primary-fixed: #0b1d2d;
+  --color-on-error-container: #93000a;
+  --color-on-secondary-fixed-variant: #5d4201;
+  --color-surface: #faf9f5;
+  --color-on-secondary-fixed: #261900;
+  --color-inverse-on-surface: #f1f1ed;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed: #ffdea5;
+  --color-tertiary: #161616;
+  --color-on-error: #ffffff;
+  --color-surface-container-low: #f4f4f0;
+  --color-tertiary-fixed: #e5e2e1;
+  --color-on-tertiary-container: #929191;
+  --color-tertiary-fixed-dim: #c8c6c5;
+  --color-secondary-container: #fed488;
+  --color-primary-fixed-dim: #b7c8de;
+  --color-surface-tint: #4f6073;
+  --color-on-tertiary-fixed: #1b1c1c;
+  --color-on-primary-fixed-variant: #38485a;
+  --color-on-tertiary-fixed-variant: #474746;
+  --color-surface-container-high: #e8e8e4;
+  --color-on-background: #1a1c1a;
+  --color-outline: #74777d;
+  --color-on-secondary-container: #785a1a;
+  --color-surface-dim: #dadad6;
+  --color-primary-container: #1a2b3c;
+  --color-error-container: #ffdad6;
+  --color-secondary: #775a19;
+  --color-background: #faf9f5;
+  --color-surface-variant: #e2e3df;
+  --color-surface-bright: #faf9f5;
+  --color-on-surface: #1a1c1a;
+  --color-inverse-surface: #2f312e;
+  --color-surface-container-highest: #e2e3df;
+  --color-surface-container: #eeeeea;
+  --color-on-surface-variant: #44474c;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary: #ffffff;
+
+  /* ---- Typography ---- */
+  --font-headline: "Outfit", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --text-display-lg: 48px;
+  --text-headline-lg: 32px;
+  --text-headline-lg-mobile: 24px;
+  --text-headline-md: 20px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-label-md: 12px;
+
+  /* ---- Spacing ---- */
+  --spacing-gutter: 1.5rem;
+  --spacing-stack-lg: 4rem;
+  --spacing-stack-md: 1.5rem;
+  --spacing-stack-sm: 0.5rem;
+  --spacing-margin-desktop: 4rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-container-max: 1440px;
+
+  /* ---- Border Radius ---- */
+  --radius-DEFAULT: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  --radius-full: 9999px;
+}
+
+
+/* ========================================
+   Base Styles
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: 1.5;
+  color: var(--color-on-surface);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ========================================
+   Glass Header
+   ======================================== */
+
+.glass-header {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+
+/* ========================================
+   Marquee (Trust Strip)
+   ======================================== */
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* ========================================
+   Scroll Animations
+   ======================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+
+/* ========================================
+   Drawer (Quote / Specs)
+   ======================================== */
+
+.drawer-closed {
+  transform: translateX(100%);
+}
+
+.drawer-open {
+  transform: translateX(0%);
+}
+
+
+/* ========================================
+   Scrollbar Hide
+   ======================================== */
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* ========================================
+   Loading Overlay
+   ======================================== */
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s;
+}
+
+.loading-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  animation: loading-entrance 0.8s ease-out forwards;
+}
+
+.loading-icon {
+  width: 8rem;
+  height: 8rem;
+  animation: float-logo 3s ease-in-out infinite;
+  filter: drop-shadow(0 4px 16px rgba(255, 222, 165, 0.2));
+}
+
+.loading-text {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: transparent;
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-secondary-fixed) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  animation: text-reveal 0.8s ease-out 0.2s forwards, subtle-pulse 2s ease-in-out infinite 1s;
+}
+
+@keyframes loading-entrance {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-logo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes text-reveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+
+/* ========================================
+   Form Success State
+   ======================================== */
+
+.form-success {
+  display: none;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.form-success.visible {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ========================================
+   Responsive Helpers
+   ======================================== */
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+  .mobile-header { display: flex !important; }
+}
+
+@media (min-width: 769px) {
+  .desktop-header { display: flex !important; }
+  .mobile-header-standalone { display: none !important; }
+}

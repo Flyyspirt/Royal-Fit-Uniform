@@ -1,0 +1,40 @@
+name: Build & Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production
+        run: npm run build
+
+      - name: Verify dist output
+        run: |
+          echo "Checking dist directory..."
+          ls -la dist/
+          test -f dist/index.html || (echo "ERROR: index.html not found in dist/" && exit 1)
+          test -f dist/about.html || (echo "ERROR: about.html not found in dist/" && exit 1)
+          test -f dist/contact.html || (echo "ERROR: contact.html not found in dist/" && exit 1)
+          test -f dist/lookbook.html || (echo "ERROR: lookbook.html not found in dist/" && exit 1)
+          test -f dist/product.html || (echo "ERROR: product.html not found in dist/" && exit 1)
+          test -f dist/solutions.html || (echo "ERROR: solutions.html not found in dist/" && exit 1)
+          echo "All pages built successfully."

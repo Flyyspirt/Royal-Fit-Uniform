@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B2B Corporate Uniform Lookbook | Hospitality & Enterprise | Royal Fit Uniform</title>
+  <meta name="description" content="Explore our corporate uniform lookbook. Precision-tailored B2B apparel for reception, concierge, and executive staff across enterprise hospitality." />
+  <link rel="canonical" href="https://royalfituniform.com/lookbook.html" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <meta property="og:title" content="Front of House Lookbook — Royal Fit Uniform" />
+  <meta property="og:description" content="Precision-tailored reception, concierge, and valet uniforms for elite hotels." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://royalfituniform.com/lookbook.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- GA4: Add your measurement ID here once set up -->
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay">
+    <div class="loading-content">
+      <img src="/favicon.svg" alt="Royal Fit Logo" class="loading-icon" width="64" height="64" fetchpriority="high">
+      <span class="loading-text">Royal Fit Uniform</span>
+    </div>
+  </div>
+
+  <!-- ========== DESKTOP HEADER ========== -->
+  <header class="fixed top-0 w-full z-50 h-[72px] bg-surface/80 glass-header hidden md:flex justify-between items-center px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto left-0 right-0 transition-shadow duration-300">
+    <div class="flex items-center gap-8">
+      <a href="/" class="font-headline text-[var(--text-headline-md)] font-bold tracking-tighter text-primary flex items-center"><img src="/favicon.svg" alt="Royal Fit Uniform" class="h-8 md:h-10"></a>
+      <nav class="flex gap-6">
+        <a href="/solutions.html" class="text-primary hover:text-secondary transition-colors font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold">Solutions</a>
+        <a href="/lookbook.html" class="text-secondary border-b-2 border-secondary pb-1 font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold">Lookbook</a>
+        <a href="/about.html" class="text-primary hover:text-secondary transition-colors font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold">Our Story</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="tel:+919346549694" class="text-primary hover:text-secondary transition-all duration-300"><span class="material-symbols-outlined">call</span></a>
+      <a href="/contact.html" class="bg-primary text-on-primary font-headline text-[var(--text-label-md)] uppercase px-6 py-3 rounded-full hover:bg-primary-container transition-colors tracking-widest font-semibold">Get Quote</a>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE HEADER ========== -->
+  <header class="fixed top-0 w-full z-50 h-[72px] bg-surface/80 glass-header flex md:hidden justify-between items-center px-[var(--spacing-margin-mobile)]">
+    <a href="/" class="font-headline text-[var(--text-headline-md)] font-bold tracking-tighter text-primary flex items-center"><img src="/favicon.svg" alt="Royal Fit Uniform" class="h-8 md:h-10"></a>
+    <button id="mobile-hamburger" class="text-primary p-2" aria-label="Open menu"><span class="material-symbols-outlined text-[28px]">menu</span></button>
+  </header>
+  <div id="mobile-overlay" class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-[55] hidden"></div>
+  <nav id="mobile-menu" class="fixed top-0 right-0 h-full w-[280px] bg-surface z-[60] transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col">
+    <div class="flex justify-between items-center h-[72px] px-6 border-b border-surface-variant">
+      <span class="font-headline text-[var(--text-headline-md)] font-bold text-primary">Menu</span>
+      <button id="mobile-hamburger" class="text-primary p-2"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="flex flex-col p-6 gap-6">
+      <a href="/" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Home</a>
+      <a href="/solutions.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Solutions</a>
+      <a href="/lookbook.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-secondary">Lookbook</a>
+      <a href="/about.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Our Story</a>
+      <a href="/contact.html" class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Contact</a>
+      <hr class="border-surface-variant" />
+      <a href="/contact.html" class="bg-primary text-on-primary font-headline text-[var(--text-label-md)] uppercase px-6 py-3 rounded-full text-center tracking-widest font-semibold">Get Quote</a>
+    </div>
+  </nav>
+
+  <main id="swup" class="transition-fade">
+    <!-- ========== HERO ========== -->
+    <section class="relative w-full h-[500px] md:h-[614px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 bg-primary/20 z-10"></div>
+      <img src="/front-of-house-hero.png"
+        alt="Professional hotel front desk staff in premium navy uniforms" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" loading="eager" />
+      <div class="relative z-20 text-center text-on-primary px-[var(--spacing-margin-mobile)]">
+        <h1 class="font-headline text-[clamp(32px,6vw,64px)] font-bold mb-4 tracking-tighter leading-[1.1]">Front of House</h1>
+        <p class="font-body text-[var(--text-body-lg)] max-w-2xl mx-auto opacity-90 leading-relaxed">First impressions engineered for perfection. Precision tailoring for reception, concierge, and valet professionals.</p>
+
+      </div>
+    </section>
+
+    <!-- ========== FILTERS ========== -->
+    <section class="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] py-[var(--spacing-stack-md)] flex justify-center border-b border-surface-variant">
+      <div class="flex gap-8 overflow-x-auto hide-scrollbar pb-2">
+        <button data-filter="all" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-primary border-b-2 border-primary pb-1 whitespace-nowrap font-semibold">All Looks</button>
+        <button data-filter="f-b-kitchen" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap font-semibold">F&B-Kitchen</button>
+        <button data-filter="formal-shirt" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap font-semibold">Formal Shirt</button>
+        <button data-filter="front-office" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap font-semibold">Front Office</button>
+        <button data-filter="housing-keeping-uniform" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap font-semibold">Housing Keeping Uniform</button>
+        <button data-filter="steward-uniform" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap font-semibold">Steward Uniform</button>
+        <button data-filter="supervisor-uniform" class="font-headline text-[var(--text-label-md)] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap font-semibold">Supervisor uniform</button>
+
+      </div>
+    </section>
+
+    <!-- ========== LOOKBOOK GRID ========== -->
+    <section class="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] py-[var(--spacing-stack-lg)]">
+      
+      <div id="lookbook-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-gutter)]">
+
+        <!-- Look Card: Chef Professional Coat -->
+        <article class="lookbook-card reveal reveal-delay-1 group cursor-pointer flex flex-col gap-4" data-category="f-b-kitchen" onclick="openDrawer('f-b-kitchen-chef-professional-coat')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/f-b-kitchen-chef-professional-coat-black-chef-coat-black-chef-coat-1.webp"
+              alt="Chef Professional Coat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Chef Professional Coat</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">F&B-Kitchen</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('f-b-kitchen-chef-professional-coat'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Kitchen Utlity Shirt -->
+        <article class="lookbook-card reveal reveal-delay-2 group cursor-pointer flex flex-col gap-4" data-category="f-b-kitchen" onclick="openDrawer('f-b-kitchen-kitchen-utlity-shirt')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/f-b-kitchen-kitchen-utlity-shirt-black-kitchen-utlity-shirt-black-kitchen-utlity-shirt-1.webp"
+              alt="Kitchen Utlity Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Kitchen Utlity Shirt</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">F&B-Kitchen</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('f-b-kitchen-kitchen-utlity-shirt'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Formal Shirt -->
+        <article class="lookbook-card reveal reveal-delay-3 group cursor-pointer flex flex-col gap-4" data-category="formal-shirt" onclick="openDrawer('formal-shirt-formal-shirt-default')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/formal-shirt-formal-shirt-default-blue-formal-shot-heroshot.webp"
+              alt="Formal Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Formal Shirt</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Formal Shirt</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('formal-shirt-formal-shirt-default'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Bellhop Jacket & Trouser -->
+        <article class="lookbook-card reveal reveal-delay-4 group cursor-pointer flex flex-col gap-4" data-category="front-office" onclick="openDrawer('front-office-bellhop-jacket-trouser')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/front-office-bellhop-jacket-trouser-black-bellhop-uniform-black-bellhop-uniform-1.webp"
+              alt="Bellhop Jacket & Trouser" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Bellhop Jacket & Trouser</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Front Office</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('front-office-bellhop-jacket-trouser'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Blazzer -->
+        <article class="lookbook-card reveal reveal-delay-1 group cursor-pointer flex flex-col gap-4" data-category="front-office" onclick="openDrawer('front-office-blazzer')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/front-office-blazzer-black-blazer-black-blazer-1.webp"
+              alt="Blazzer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Blazzer</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Front Office</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('front-office-blazzer'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Reception Shirt -->
+        <article class="lookbook-card reveal reveal-delay-2 group cursor-pointer flex flex-col gap-4" data-category="front-office" onclick="openDrawer('front-office-reception-shirt')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/front-office-reception-shirt-blue-reception-shirt-blue-reception-shirt-1.webp"
+              alt="Reception Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Reception Shirt</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Front Office</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('front-office-reception-shirt'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Trousers -->
+        <article class="lookbook-card reveal reveal-delay-3 group cursor-pointer flex flex-col gap-4" data-category="front-office" onclick="openDrawer('front-office-trousers')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/front-office-trousers-black-trouser-black-trouser-1.webp"
+              alt="Trousers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Trousers</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Front Office</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('front-office-trousers'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: WaistCoat -->
+        <article class="lookbook-card reveal reveal-delay-4 group cursor-pointer flex flex-col gap-4" data-category="front-office" onclick="openDrawer('front-office-waistcoat')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/front-office-waistcoat-black-waist-coat-black-waist-coat-1.webp"
+              alt="WaistCoat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">WaistCoat</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Front Office</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('front-office-waistcoat'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Housing Keeping Uniform -->
+        <article class="lookbook-card reveal reveal-delay-1 group cursor-pointer flex flex-col gap-4" data-category="housing-keeping-uniform" onclick="openDrawer('housing-keeping-uniform-housing-keeping-uniform-default')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/housing-keeping-uniform-housing-keeping-uniform-default-gemini-generated-image-45tgde45tgde45tg.webp"
+              alt="Housing Keeping Uniform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Housing Keeping Uniform</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Housing Keeping Uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('housing-keeping-uniform-housing-keeping-uniform-default'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Approns -->
+        <article class="lookbook-card reveal reveal-delay-2 group cursor-pointer flex flex-col gap-4" data-category="housing-keeping-uniform" onclick="openDrawer('housing-keeping-uniform-approns')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/housing-keeping-uniform-approns-blue-approns-blue-appron-1.webp"
+              alt="Approns" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Approns</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Housing Keeping Uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('housing-keeping-uniform-approns'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Housekeeping Professional Tunic -->
+        <article class="lookbook-card reveal reveal-delay-3 group cursor-pointer flex flex-col gap-4" data-category="housing-keeping-uniform" onclick="openDrawer('housing-keeping-uniform-housekeeping-professional-tunic')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/housing-keeping-uniform-housekeeping-professional-tunic-green-mint-tunic-set-green-mint-tunic-uniform-1.webp"
+              alt="Housekeeping Professional Tunic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Housekeeping Professional Tunic</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Housing Keeping Uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('housing-keeping-uniform-housekeeping-professional-tunic'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Housekeeping Work Trousers -->
+        <article class="lookbook-card reveal reveal-delay-4 group cursor-pointer flex flex-col gap-4" data-category="housing-keeping-uniform" onclick="openDrawer('housing-keeping-uniform-housekeeping-work-trousers')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/housing-keeping-uniform-housekeeping-work-trousers-black-housekeeping-trouser-black-housekeeping-trouser-1.webp"
+              alt="Housekeeping Work Trousers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Housekeeping Work Trousers</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Housing Keeping Uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('housing-keeping-uniform-housekeeping-work-trousers'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Linen Room Attendant Tunic -->
+        <article class="lookbook-card reveal reveal-delay-1 group cursor-pointer flex flex-col gap-4" data-category="housing-keeping-uniform" onclick="openDrawer('housing-keeping-uniform-linen-room-attendant-tunic')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/housing-keeping-uniform-linen-room-attendant-tunic-light-blue-tunic-blue-attendant-tunic-1.webp"
+              alt="Linen Room Attendant Tunic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Linen Room Attendant Tunic</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Housing Keeping Uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('housing-keeping-uniform-linen-room-attendant-tunic'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Steward Uniform -->
+        <article class="lookbook-card reveal reveal-delay-2 group cursor-pointer flex flex-col gap-4" data-category="steward-uniform" onclick="openDrawer('steward-uniform-steward-uniform-default')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/steward-uniform-steward-uniform-default-gemini-generated-image-1oebgu1oebgu1oeb.webp"
+              alt="Steward Uniform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Steward Uniform</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Steward Uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('steward-uniform-steward-uniform-default'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Look Card: Supervisor uniform -->
+        <article class="lookbook-card reveal reveal-delay-3 group cursor-pointer flex flex-col gap-4" data-category="supervisor-uniform" onclick="openDrawer('supervisor-uniform-supervisor-uniform-default')">
+          <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low rounded-lg">
+            <img src="/catalog/supervisor-uniform-supervisor-uniform-default-gemini-generated-image-8ddyki8ddyki8ddy.webp"
+              alt="Supervisor uniform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <div class="absolute bottom-4 right-4 w-8 h-8 bg-on-primary rounded-full flex items-center justify-center text-primary shadow-sm hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[20px]">add</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary mb-1">Supervisor uniform</h3>
+            <p class="font-body text-[var(--text-body-md)] text-on-surface-variant">Supervisor uniform</p>
+            <button class="mt-4 font-headline text-[var(--text-label-md)] uppercase tracking-widest text-secondary hover:text-secondary-fixed-dim transition-colors flex items-center gap-2 font-semibold" onclick="openDrawer('supervisor-uniform-supervisor-uniform-default'); event.stopPropagation();">
+              View Program Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+  
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="bg-primary-container py-16 px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] text-center">
+      <h2 class="reveal font-headline text-[var(--text-headline-lg)] font-bold text-secondary-fixed mb-4 tracking-tight">Need a complete program?</h2>
+      <p class="reveal font-body text-[var(--text-body-lg)] text-on-primary/80 mb-8 max-w-xl mx-auto">We build full uniform programs — from fabric selection to final delivery. Let's talk.</p>
+      <a href="/contact.html" class="reveal bg-secondary text-on-secondary px-8 py-4 rounded-full font-headline text-[var(--text-label-md)] uppercase tracking-widest font-semibold hover:bg-secondary-fixed-dim transition-colors inline-flex items-center gap-2">
+        Request Consultation <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+      </a>
+    </section>
+
+  <!-- ========== DRAWER OVERLAY ========== -->
+  <div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-[60] hidden transition-opacity duration-300 opacity-0" id="drawer-overlay" onclick="toggleDrawer()"></div>
+
+  <!-- ========== SPECS DRAWER ========== -->
+  <aside class="fixed top-0 right-0 h-full w-full max-w-[480px] bg-surface-container-low shadow-2xl z-[70] transition-transform duration-500 ease-in-out drawer-closed overflow-y-auto flex flex-col" id="specs-drawer">
+    <div class="p-6 border-b border-surface-variant flex justify-between items-center sticky top-0 bg-surface-container-low/90 backdrop-blur-md z-10">
+      <h2 class="font-headline text-[var(--text-headline-md)] font-semibold text-primary">Program Breakdown</h2>
+      <button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-full hover:bg-surface-variant" onclick="toggleDrawer()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="p-6 flex-grow flex flex-col gap-8">
+      <img id="drawer-main-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_rn-AwvQz1SfLNU14kEym5JZdnSrPzmuHbExShZvv8JJqiVGNOP0H9T43jgMXkH9DUD8m3ZlZDwd5qJ0gJQCDlHD6sl8goN3RpfbBQ4KXMBUsLh7Gz_EJXMilSNKgly8oUmQkwqekwQ1E22xCiRcZXlsCcxmfxDGTUMvp6OJ4RaKICb5sgKY6b3OhsK546siZtVCTw-b1t6ayKKFw0w6_RotR_tRKvnRsFzc-nsdo31XyzQZHcbA2rnvwuZCMxd8G8EBcYYmaxA"
+        alt="Close-up of premium fabric and tailoring" class="w-full aspect-[4/5] object-cover rounded-lg" />
+      <div>
+        <h3 id="drawer-title" class="font-headline text-[var(--text-headline-lg)] font-bold text-primary mb-2">The Signature Receptionist</h3>
+        <p id="drawer-desc" class="font-body text-[var(--text-body-md)] text-on-surface-variant">A refined silhouette designed for high-traffic elegance. Stretch-wool blend ensures 12-hour comfort without losing structure.</p>
+      </div>
+      <div class="space-y-4">
+        <div id="drawer-items" class="flex flex-col gap-4">
+          <!-- Items injected via JS -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-surface rounded overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPXqyjOx0AqCTd52xdwZP8JinRxwqbA5L0pI7HQqsDgo47BKvqPDgNjfOQnabWee7ukGvOel6LWrioozCgH5tTOJGVbhI4BYMKIKJTPPb-amwil-SmGUAXZ5qZ2U5WgvX2hgDJtjCXd6zPkI_WDmN6e70OPGhEJIG2iZV5RAGdLld__TYcu3j0i750iHTUgYcBTn8e8F_acHNzevO5YZL8A84JFq0tB8Z6dSd9cNVRh9wIc1MHYO_ESokuloqWLLJD1dFE4n6s8A"
+                  alt="Item" class="w-full h-full object-cover" />
+              </div>
+              <span class="font-body text-[var(--text-body-md)] text-primary">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-auto pt-6 border-t border-surface-variant">
+        <a id="drawer-quote-btn" href="/contact.html" class="w-full bg-primary text-on-primary h-12 rounded-full font-headline text-[var(--text-label-md)] uppercase tracking-widest hover:bg-primary-container transition-colors flex justify-center items-center gap-2 font-semibold text-center px-4">
+          Request Quote for Program <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-primary pt-[var(--spacing-stack-lg)] pb-[var(--spacing-stack-md)]">
+    <div class="flex flex-col md:flex-row justify-between items-start w-full px-[var(--spacing-margin-mobile)] md:px-[var(--spacing-margin-desktop)] max-w-[var(--spacing-container-max)] mx-auto border-t border-on-primary-container/20 pt-8 gap-8">
+      <div>
+        <span class="font-headline text-[var(--text-headline-lg)] font-bold text-secondary-fixed block mb-4">Royal Fit Uniform</span>
+        <p class="font-body text-[var(--text-body-md)] text-on-primary/60 mb-2">Hospitality uniform programs engineered for fit.</p>
+        <p class="font-body text-[var(--text-label-md)] text-on-primary/40">GSTIN: 36CFAPC9753D1ZM</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <nav class="flex flex-wrap gap-6">
+          <a href="/solutions.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Solutions</a>
+          <a href="/lookbook.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Lookbook</a>
+          <a href="/about.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Our Story</a>
+          <a href="/contact.html" class="font-headline text-[var(--text-label-md)] uppercase text-on-primary/60 hover:text-on-primary transition-colors tracking-widest">Contact</a>
+        </nav>
+        <a href="tel:+919346549694" class="font-body text-[var(--text-body-md)] text-on-primary/60 hover:text-on-primary transition-colors">+91-9346549694</a>
+        <p class="font-body text-[var(--text-label-md)] text-on-primary/40 max-w-xs">Vanasthalipuram, Hyderabad, Telangana 500070</p>
+      </div>
+    </div>
+    <div class="text-center mt-8 pb-4">
+      <p class="font-body text-[var(--text-label-md)] text-on-primary/30">&copy; 2024 Royal Fit Uniform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
