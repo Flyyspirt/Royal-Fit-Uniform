@@ -301,18 +301,18 @@
         <h2 class="reveal font-headline text-[var(--text-headline-lg)] font-bold text-secondary-fixed mb-8 tracking-tight">Ready to upgrade your property's image?</h2>
         <form data-rf-form class="flex flex-col gap-6 max-w-md mx-auto">
           <div class="form-field">
-            <input type="text" required placeholder="Property Name"
+            <input type="text" name="businessName" required placeholder="Property Name"
               class="w-full bg-transparent border-0 border-b border-secondary text-on-primary placeholder:text-on-primary/50 focus:ring-0 focus:border-secondary-fixed transition-colors px-0 py-3 font-body text-[var(--text-body-md)]" />
             <p class="field-error hidden text-error text-[var(--text-label-md)] mt-1">Property name is required</p>
           </div>
           <div class="form-field">
-            <input type="email" required placeholder="Work Email"
+            <input type="email" name="email" required placeholder="Work Email"
               class="w-full bg-transparent border-0 border-b border-secondary text-on-primary placeholder:text-on-primary/50 focus:ring-0 focus:border-secondary-fixed transition-colors px-0 py-3 font-body text-[var(--text-body-md)]" />
             <p class="field-error hidden text-error text-[var(--text-label-md)] mt-1">Valid email is required</p>
           </div>
           <div class="flex justify-between items-end border-b border-secondary pb-3">
             <span class="text-on-primary/50 font-body text-[var(--text-body-md)]">Approximate Staff Size</span>
-            <select class="bg-transparent border-0 text-on-primary focus:ring-0 py-0 pr-8 font-body text-[var(--text-body-md)]">
+            <select name="volume" class="bg-transparent border-0 text-on-primary focus:ring-0 py-0 pr-8 font-body text-[var(--text-body-md)]">
               <option class="text-primary" value="<50">&lt;50</option>
               <option class="text-primary" value="50-200">50 – 200</option>
               <option class="text-primary" value="200-500">200 – 500</option>

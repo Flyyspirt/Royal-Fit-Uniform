@@ -300,12 +300,45 @@ function initForms() {
 
       if (!valid) return;
 
-      // Show success state
-      const successEl = form.parentElement?.querySelector('.form-success');
-      if (successEl) {
-        form.style.display = 'none';
-        successEl.classList.add('visible');
+      // Extract form data
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Add timestamp and page source
+      data.submittedAt = new Date().toISOString();
+      data.sourcePage = window.location.pathname;
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.innerHTML = 'Submitting...';
+        submitBtn.disabled = true;
       }
+
+      // Send to n8n webhook
+      fetch('https://n8n.royalfituniform.com/webhook-test/royal-fit-inquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => {
+        // Show success state
+        const successEl = form.parentElement?.querySelector('.form-success');
+        if (successEl) {
+          form.style.display = 'none';
+          successEl.classList.add('visible');
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        if (submitBtn) {
+          submitBtn.innerHTML = originalBtnText;
+          submitBtn.disabled = false;
+        }
+        alert('There was an error submitting your inquiry. Please try again or call us directly.');
+      });
     });
 
     // Clear error on input
