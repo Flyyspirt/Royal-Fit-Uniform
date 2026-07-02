@@ -316,7 +316,7 @@ function initForms() {
       }
 
       // Send to n8n webhook
-      fetch('https://n8n.royalfituniform.com/webhook-test/royal-fit-inquiry', {
+      fetch('https://n8n.royalfituniform.com/webhook/royal-fit-inquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
