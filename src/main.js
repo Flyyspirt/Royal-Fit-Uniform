@@ -324,7 +324,11 @@ function initForms() {
         },
         body: JSON.stringify(data),
       })
-      .then(response => {
+      .then(async response => {
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(`HTTP error! status: ${response.status}, body: ${text}`);
+        }
         // Show success state
         const successEl = form.parentElement?.querySelector('.form-success');
         if (successEl) {
