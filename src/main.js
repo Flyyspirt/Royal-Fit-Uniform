@@ -320,6 +320,7 @@ function initForms() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'royalfit-rfu': 'fitvalueisprovided',
         },
         body: JSON.stringify(data),
       })
